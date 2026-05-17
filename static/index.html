@@ -6,18 +6,18 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
     />
-    <title>Opendle v5</title>
+    <title>Opendle</title>
     <meta
       name="description"
       content="Guess the chess opening from the board position. A daily chess puzzle game."
     />
-    <meta property="og:title" content="Opendle v5" />
+    <meta property="og:title" content="Opendle" />
     <meta
       property="og:description"
       content="Guess the chess opening. A daily chess puzzle game."
     />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="@jaredwest14" />
+    <meta name="twitter:creator" content="@2christaken" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap"
       rel="stylesheet"
@@ -1688,7 +1688,7 @@
       </div>
     </div>
 
-    <!-- STATS MODAL -->
+    <!-- 📊 MODAL -->
     <div class="modal-bg" id="stats-modal">
       <div class="modal">
         <div class="modal-head">
@@ -1718,7 +1718,7 @@
         </div>
         <div class="modal-body">
           <div class="help-row">
-            <div class="help-icon">CHESS</div>
+            <div class="help-icon">♟</div>
             <div class="help-txt">
               A board position appears after a few moves.
               <b>Guess the chess opening</b>. Each wrong guess reveals one more
@@ -1733,7 +1733,7 @@
             </div>
           </div>
           <div class="help-row">
-            <div class="help-icon">STATS</div>
+            <div class="help-icon">📊</div>
             <div class="help-txt">
               Each guess reveals <b>5 attribute scores</b> - Family, Move 1,
               Structure, ECO, and Tier.
@@ -1816,9 +1816,9 @@
           <div class="credits-section">
             <h3>Created by</h3>
             <div class="credit-item">
-              <div style="font-size: 1.4rem">CHESS</div>
+              <div style="font-size: 1.4rem">♟</div>
               <div style="flex: 1">
-                <div class="credit-name">Jared West</div>
+                <div class="credit-name">Chris</div>
                 <div class="credit-role">
                   Design, Development, Opening Database
                 </div>
@@ -1835,9 +1835,9 @@
                   border-radius: 4px;
                   border: 1px solid var(--border2);
                 "
-                onclick="window.open('https://x.com/jaredwest14', '_blank')"
+                onclick="window.open('https://x.com/@2christaken', '_blank')"
               >
-                @jaredwest14
+                @2christaken
               </div>
               <div
                 class="credit-handle"
@@ -1850,10 +1850,10 @@
                   border: 1px solid var(--border2);
                 "
                 onclick="
-                  window.open('https://chess.com/member/jaredwest14', '_blank')
+                  window.open('https://chess.com/member/2twochris', '_blank')
                 "
               >
-                Chess.com/jaredwest14
+                Chess.com/2twochris
               </div>
             </div>
           </div>
@@ -1865,43 +1865,7 @@
               through Master - including rare and unusual openings.
             </div>
           </div>
-          <div class="credits-section">
-            <h3>Version History</h3>
-            <div class="version-history">
-              <div class="version-row">
-                <span class="ver-badge">v5</span
-                ><span class="ver-desc"
-                  >Blitz mode, Reverse mode, Study mode, 5th attribute, expanded
-                  database, stats modal, chessboard.js</span
-                >
-              </div>
-              <div class="version-row">
-                <span class="ver-badge">v4</span
-                ><span class="ver-desc"
-                  >Daily mode, difficulty tiers, attribute grid, skip
-                  mechanic</span
-                >
-              </div>
-              <div class="version-row">
-                <span class="ver-badge">v3</span
-                ><span class="ver-desc"
-                  >Canvas board rendering, SAN notation engine</span
-                >
-              </div>
-              <div class="version-row">
-                <span class="ver-badge">v2</span
-                ><span class="ver-desc"
-                  >Autocomplete, move strip, 52-opening database</span
-                >
-              </div>
-              <div class="version-row">
-                <span class="ver-badge">v1</span
-                ><span class="ver-desc"
-                  >Initial concept - guess the opening from position</span
-                >
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -2058,7 +2022,7 @@
       <div class="footer-brand">Open<span>dle</span></div>
       <div class="footer-credit">
         <span>by</span>
-        <a href="https://x.com/jaredwest14" target="_blank">@jaredwest14</a>
+        <a href="https://x.com/@2christaken" target="_blank">@2christaken/a>
         <button class="footer-credit-btn" onclick="openModal('credits-modal')">
           Credits
         </button>
@@ -2176,7 +2140,7 @@
       });
 
       // SECTION
-      // CHESS ENGINE
+      // ♟ ENGINE
       // SECTION
       const FL = "abcdefgh";
       function parseFen(p) {
@@ -2557,7 +2521,7 @@
       );
 
       // SECTION
-      // STATS / STORAGE
+      // 📊 / STORAGE
       // SECTION
       function loadStats() {
         const def = {
@@ -2760,6 +2724,7 @@
         document.getElementById("moves-strip").style.display = "";
 
         buildReverseGrid();
+        renderReverseMoves();
       }
 
       function buildReverseGrid() {
@@ -2777,9 +2742,42 @@
               .querySelectorAll(".move-input-slot")
               .forEach((s) => s.classList.remove("selected"));
             slot.classList.add("selected");
+            renderReverseMoves();
           });
           grid.appendChild(slot);
         });
+      }
+
+      function renderReverseMoves() {
+        const strip = document.getElementById("moves-strip");
+        [...strip.querySelectorAll(".move-group")].forEach((e) => e.remove());
+        const dots = strip.querySelector(".moves-dots");
+        if (dots) dots.innerHTML = "";
+        const meta = strip.querySelector(".moves-meta");
+        const moves = G.reverseSelected ? G.reverseSelected.moves : [];
+        if (!G.reverseSelected) {
+          meta.querySelector(".moves-hint").textContent =
+            "Pick an opening to preview the move list.";
+          return;
+        }
+        meta.querySelector(".moves-hint").textContent =
+          `Selected: ${G.reverseSelected.name}`;
+        for (let i = 0; i < moves.length; i += 2) {
+          const g = document.createElement("div");
+          g.className = "move-group";
+          const n = document.createElement("span");
+          n.className = "move-num";
+          n.textContent = i / 2 + 1 + ".";
+          g.appendChild(n);
+          [i, i + 1].forEach((idx) => {
+            if (idx >= moves.length) return;
+            const t = document.createElement("span");
+            t.className = "move-token shown";
+            t.textContent = moves[idx];
+            g.appendChild(t);
+          });
+          strip.insertBefore(g, meta);
+        }
       }
 
       function submitReverseGuess() {
@@ -2872,7 +2870,9 @@
       // SECTION
       function render(flashBoard = false, freshMoveIdx = -1) {
         renderBoard(flashBoard);
-        if (gameMode !== "reverse") {
+        if (gameMode === "reverse") {
+          renderReverseMoves();
+        } else {
           renderMoves(freshMoveIdx);
           renderAttrGrid();
           renderGuessLog();
@@ -3205,7 +3205,7 @@
                 : "Random";
         const blitzTag =
           gameMode === "blitz" && G.won ? ` - ${blitzLeft}s left` : "";
-        const txt = `Opendle v5 ${score}\n${modeTag}${blitzTag} - ${DIFF_LABELS[difficulty]}\nOpening: ${G.opening.name}\n\n${rows.join("")}\n\ngithub.com/jaredwest14 - @jaredwest14`;
+        const txt = `Opendle ${score}\n${modeTag}${blitzTag} - ${DIFF_LABELS[difficulty]}\nOpening: ${G.opening.name}\n\n${rows.join("")}\n\nx.com/@2christaken - @2christaken`;
         document.getElementById("rm-emoji").textContent = txt;
         document.getElementById("rm-emoji").classList.toggle("show");
         navigator.clipboard
@@ -3309,7 +3309,7 @@
       }
 
       // SECTION
-      // STATS MODAL
+      // 📊 MODAL
       // SECTION
       function renderStatsModal() {
         const s = loadStats();
