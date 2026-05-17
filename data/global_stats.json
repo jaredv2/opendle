@@ -1,0 +1,48 @@
+{
+  "total_games": 5,
+  "total_wins": 1,
+  "difficulty_breakdown": {
+    "beginner": 4,
+    "intermediate": 0,
+    "master": 1
+  },
+  "mode_breakdown": {
+    "daily": 1,
+    "random": 4,
+    "blitz": 0,
+    "reverse": 0
+  },
+  "guess_distribution": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "popular_openings": {
+    "Bishop's Opening": {
+      "seen": 1,
+      "wins": 0
+    },
+    "Ruy Lopez Morphy Defense": {
+      "seen": 1,
+      "wins": 0
+    },
+    "Spanish Four Knights": {
+      "seen": 1,
+      "wins": 1
+    },
+    "Ponziani Opening": {
+      "seen": 1,
+      "wins": 0
+    },
+    "King's Indian Defense": {
+      "seen": 1,
+      "wins": 0
+    }
+  },
+  "daily_active": {
+    "2026-05-17": 5
+  }
+}

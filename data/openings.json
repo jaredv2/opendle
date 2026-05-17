@@ -1,0 +1,4143 @@
+[
+  {
+    "name": "Ruy Lopez",
+    "eco": "C65",
+    "family": "Ruy Lopez",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bb5",
+      "a6",
+      "Ba4",
+      "Nf6",
+      "O-O"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "One of the most deeply analyzed openings. White pressures the knight defending e5 - a weapon of world champions for centuries.",
+    "ideas": [
+      "White pressures the e5 pawn indirectly via Bb5",
+      "Black must decide when to break with ...d5",
+      "The Closed variation (9...Na5) leads to rich middlegame play",
+      "Used by every world champion since Steinitz"
+    ]
+  },
+  {
+    "name": "Italian Game",
+    "eco": "C54",
+    "family": "Italian",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Bc5",
+      "c3",
+      "Nf6",
+      "d4"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "A classical opening targeting f7 and the center. After falling out of fashion for a century, it has surged back to elite level play.",
+    "ideas": [
+      "White targets the f7 square with Bc4",
+      "c3+d4 builds a powerful center pawn duo",
+      "Black must react precisely to avoid a worse position",
+      "Magnus Carlsen's preferred weapon in many recent games"
+    ]
+  },
+  {
+    "name": "Sicilian Defense",
+    "eco": "B50",
+    "family": "Sicilian",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "d6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "The most popular and complex of all chess openings. Black fights for the center asymmetrically, creating rich counterplay.",
+    "ideas": [
+      "Black avoids symmetry and creates immediate imbalance",
+      "The c-file becomes a key battleground after ...cxd4",
+      "White gains space; Black gets dynamic counterplay",
+      "Played more than any other opening at the elite level"
+    ]
+  },
+  {
+    "name": "French Defense",
+    "eco": "C11",
+    "family": "French",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e6",
+      "d4",
+      "d5",
+      "Nc3",
+      "Nf6",
+      "Bg5",
+      "dxe4",
+      "Nxe4"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black accepts a cramped but solid position in exchange for long-term queenside counterplay. A strategic battleground from move one.",
+    "ideas": [
+      "Black's e6 pawn defines the pawn chain",
+      "The light-squared bishop is often Black's problem piece",
+      "...c5 breaks the center - Black's key freeing move",
+      "White attacks kingside; Black counters on the queenside"
+    ]
+  },
+  {
+    "name": "Caro-Kann Defense",
+    "eco": "B17",
+    "family": "Caro-Kann",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "c6",
+      "d4",
+      "d5",
+      "Nc3",
+      "dxe4",
+      "Nxe4",
+      "Nd7",
+      "Ng5"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "A solid, reliable defense. Black challenges the center with c6-d5, aiming for sound structure while keeping the bishop active.",
+    "ideas": [
+      "Unlike the French, Black's light-squared bishop remains active",
+      "c6 supports d5 without blocking the bishop",
+      "The endgame tends to favor Black's structure",
+      "Karpov and Petrosian's weapon for a reason - rock solid"
+    ]
+  },
+  {
+    "name": "Queen's Gambit",
+    "eco": "D37",
+    "family": "Queen's Gambit",
+    "tier": 1,
+    "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "e6",
+      "Nc3",
+      "Nf6",
+      "Bg5",
+      "Be7",
+      "e3"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "White's most classical queen's pawn opening, offering a pawn to gain central control. One of the most deeply analyzed openings.",
+    "ideas": [
+      "The c4 pawn offer is usually taken back quickly",
+      "White's Bg5 pin creates lasting pressure on the d5 point",
+      "Black must navigate the 'minority attack' in the endgame",
+      "The Exchange variation creates hanging pawns for Black"
+    ]
+  },
+  {
+    "name": "King's Indian Defense",
+    "eco": "E97",
+    "family": "King's Indian",
+    "tier": 1,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "Bg7",
+      "e4",
+      "d6",
+      "Nf3",
+      "O-O",
+      "Be2",
+      "e5"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "Black allows White to build a big center, then counterattacks it. A favorite of Fischer, Kasparov, and countless world champions.",
+    "ideas": [
+      "Black fianchettoes the bishop to g7 for long-range pressure",
+      "...e5 is the key counterattack against White's center",
+      "Opposite-side attacks are common - a race of attacks",
+      "Kasparov won dozens of brilliant games in this system"
+    ]
+  },
+  {
+    "name": "Scotch Game",
+    "eco": "C45",
+    "family": "Scotch",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "d4",
+      "exd4",
+      "Nxd4",
+      "Nf6",
+      "Nxc6"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White opens the center immediately with d4. Championed by Kasparov - avoids the Ruy Lopez's dense theory.",
+    "ideas": [
+      "White opens the center early, leading to open play",
+      "The Nxc6 recapture gives Black doubled pawns but bishop pair",
+      "Garry Kasparov revived this opening in the 1990s",
+      "Leads to concrete positions rather than slow maneuvering"
+    ]
+  },
+  {
+    "name": "King's Gambit",
+    "eco": "C33",
+    "family": "King's Gambit",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "f4",
+      "exf4",
+      "Nf3",
+      "g5",
+      "h4",
+      "g4",
+      "Ng5"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "A Romantic-era gambit sacrificing a pawn for rapid development and a kingside attack. Swashbuckling and dangerous.",
+    "ideas": [
+      "White sacrifices f-pawn for rapid development",
+      "The kingside becomes wide open - attack and counterattack",
+      "Black's g5 pawn advance is the classic defensive try",
+      "Played by Morphy, Spassky, and Fischer - still dangerous today"
+    ]
+  },
+  {
+    "name": "London System",
+    "eco": "D02",
+    "family": "London",
+    "tier": 1,
+    "moves": [
+      "d4",
+      "d5",
+      "Nf3",
+      "Nf6",
+      "Bf4",
+      "e6",
+      "e3",
+      "c5",
+      "c3"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "A solid system for White - the bishop goes to f4 early, building stable structure. Increasingly popular at all levels.",
+    "ideas": [
+      "White builds a solid structure with Bf4 before Black can challenge it",
+      "Very little theory to memorize - a complete system",
+      "The bishop on f4 controls e5 and exerts queenside pressure",
+      "Magnus Carlsen has used this regularly at the top level"
+    ]
+  },
+  {
+    "name": "Scandinavian Defense",
+    "eco": "B01",
+    "family": "Scandinavian",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "d5",
+      "exd5",
+      "Qxd5",
+      "Nc3",
+      "Qa5",
+      "d4",
+      "Nf6",
+      "Nf3"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black immediately challenges the center with d5. A favorite weapon of Magnus Carlsen - the queen is exposed but hard to attack.",
+    "ideas": [
+      "Black immediately challenges the center on move 1",
+      "The queen on a5 is active but requires careful handling",
+      "Black's setup is solid and concrete - no pawn weaknesses",
+      "Used by GM Sergei Tiviakov as his main weapon for decades"
+    ]
+  },
+  {
+    "name": "Pirc Defense",
+    "eco": "B07",
+    "family": "Pirc",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "d6",
+      "d4",
+      "Nf6",
+      "Nc3",
+      "g6",
+      "f4",
+      "Bg7",
+      "Nf3"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black builds a flexible setup and lets White overextend. The fianchettoed bishop exerts long-term central pressure.",
+    "ideas": [
+      "Black invites White to build a large center, then undermines it",
+      "The g7 bishop targets the long diagonal and h8-a1 diagonal",
+      "White often attacks with f4-f5 before Black is ready",
+      "A hypermodern choice - Black lets the center come to them"
+    ]
+  },
+  {
+    "name": "English Opening",
+    "eco": "A26",
+    "family": "English",
+    "tier": 1,
+    "moves": [
+      "c4",
+      "e5",
+      "Nc3",
+      "Nf6",
+      "Nf3",
+      "Nc6",
+      "g3",
+      "d5",
+      "cxd5"
+    ],
+    "pawn": "semi-closed",
+    "move1": "c4",
+    "desc": "A flexible flank opening controlling d5 with c4. Can transpose into many openings or develop into its own rich systems.",
+    "ideas": [
+      "White controls d5 from the flank rather than center",
+      "Extremely flexible - can transpose to many other openings",
+      "The fianchetto (g3, Bg2) is the most popular setup",
+      "White often avoids early pawn confrontation to keep options open"
+    ]
+  },
+  {
+    "name": "Petrov Defense",
+    "eco": "C42",
+    "family": "Petrov",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nf6",
+      "Nxe5",
+      "d6",
+      "Nf3",
+      "Nxe4",
+      "d4"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "Black mirrors White's attack. One of the most solid defenses to 1.e4 - used by elite players wanting clean, safe equality.",
+    "ideas": [
+      "Black immediately counter-attacks - 'an eye for an eye'",
+      "The position simplifies rapidly into a balanced endgame",
+      "Drawing tendencies make it frustrating for White to fight for an advantage",
+      "Kramnik, Anand, and Caruana all rely on this solid defense"
+    ]
+  },
+  {
+    "name": "Four Knights Game",
+    "eco": "C47",
+    "family": "Four Knights",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Nc3",
+      "Nf6",
+      "Bb5",
+      "Bb4",
+      "O-O"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "All four knights develop early. Leads to symmetrical, principled positions - the Spanish variation is most popular.",
+    "ideas": [
+      "All four knights appear before any pawns advance",
+      "The Spanish Four Knights (Bb5) leads to rich play",
+      "The Rubinstein variation (4.Nd5) is sharp and concrete",
+      "A principled, development-first approach to the opening"
+    ]
+  },
+  {
+    "name": "Nimzowitsch Defense",
+    "eco": "B00",
+    "family": "Nimzowitsch",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "Nc6",
+      "d4",
+      "d5",
+      "Nc3",
+      "dxe4",
+      "d5",
+      "Ne5",
+      "Qd4"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "An unconventional reply developed by Aaron Nimzowitsch. Black immediately restrains White's center and fights for e4.",
+    "ideas": [
+      "Black restrains White's center with ...Nc6 before ...d5",
+      "An early example of hypermodern thinking",
+      "Black aims for the e4 square with the knight",
+      "Rarely seen at top level but dangerous against unprepared opponents"
+    ]
+  },
+  {
+    "name": "Bishop's Opening",
+    "eco": "C23",
+    "family": "Bishop's Opening",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Bc4",
+      "Nf6",
+      "d3",
+      "Nc6",
+      "Nf3",
+      "Bc5",
+      "O-O"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White develops the bishop immediately - a solid, classical choice that avoids the heavy theory of the Ruy Lopez.",
+    "ideas": [
+      "White avoids the Ruy Lopez theory by playing Bc4 first",
+      "Solid and principled - targets f7 like the Italian",
+      "Can transpose to many positions including the Italian",
+      "A reliable choice for players who prefer concrete development"
+    ]
+  },
+  {
+    "name": "Sicilian Najdorf",
+    "eco": "B96",
+    "family": "Sicilian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "d6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "a5"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "The most fashionable Sicilian. Black's a5 prepares queenside expansion. Fischer and Kasparov's weapon of choice.",
+    "ideas": [
+      "a5 (or a6) prevents b4 and prepares queenside expansion",
+      "The most theoretical opening in all of chess",
+      "Both sides must know dozens of critical variations",
+      "Played by Kasparov in virtually every major match"
+    ]
+  },
+  {
+    "name": "Sicilian Dragon",
+    "eco": "B76",
+    "family": "Sicilian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "d6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "g6",
+      "Be3",
+      "Bg7",
+      "f3",
+      "O-O",
+      "Qd2"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black fianchettoes on g7. Opposite-side castling and mutual attacks - one of the sharpest lines in chess.",
+    "ideas": [
+      "The Yugoslav Attack (Be3, f3, Qd2) is White's most dangerous try",
+      "Black's g7 bishop is 'the Dragon' - it breathes fire down the long diagonal",
+      "Both sides castle opposite and race to attack",
+      "Black must play very precisely - one wrong move and it's over"
+    ]
+  },
+  {
+    "name": "Sicilian Scheveningen",
+    "eco": "B84",
+    "family": "Sicilian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "d6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "e6",
+      "Be2",
+      "a6",
+      "O-O",
+      "Be7",
+      "f4"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "A flexible Sicilian with e6. Black can adapt to White's formation. Favored by Kasparov in many memorable games.",
+    "ideas": [
+      "The 'small center' with d6+e6 gives Black maximum flexibility",
+      "Black can play ...b5 or ...d5 depending on White's setup",
+      "Leads to rich middlegame positions with many plans",
+      "White often pushes f4-f5 to attack Black's kingside"
+    ]
+  },
+  {
+    "name": "Sicilian Sveshnikov",
+    "eco": "B33",
+    "family": "Sicilian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "Nc6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "e5",
+      "Nb5",
+      "d6",
+      "N1c3",
+      "a6",
+      "Na3",
+      "b5"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black plays e5 to gain central space at the cost of the d5 hole. A dynamic, modern approach pioneered by Evgeny Sveshnikov.",
+    "ideas": [
+      "Black grabs central space with ...e5 but creates the d5 weakness",
+      "White often plants a knight on d5 - Black compensates with activity",
+      "Magnus Carlsen regularly employs this in World Championship matches",
+      "The b5 counterplay gives Black active queenside play"
+    ]
+  },
+  {
+    "name": "Nimzo-Indian Defense",
+    "eco": "E32",
+    "family": "Nimzo-Indian",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "Nc3",
+      "Bb4",
+      "Qc2",
+      "O-O",
+      "a3",
+      "Bxc3",
+      "Qxc3"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "A hypermodern masterpiece by Nimzowitsch. Black pins the knight and disrupts White's center, often leaving doubled pawns.",
+    "ideas": [
+      "Black pins the Nc3 immediately to disrupt White's center",
+      "Often Black gives up the bishop pair for doubled c-pawns",
+      "White's c-pawn majority vs Black's bishop pair - a classic imbalance",
+      "One of the most theoretically rich and respected defenses to d4"
+    ]
+  },
+  {
+    "name": "Grunfeld Defense",
+    "eco": "D85",
+    "family": "Grunfeld",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "d5",
+      "cxd5",
+      "Nxd5",
+      "e4",
+      "Nxc3",
+      "bxc3",
+      "Bg7"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "Black allows White a powerful pawn center and immediately counterattacks it. A dynamic hypermodern defense.",
+    "ideas": [
+      "Black deliberately gives White a large center with e4+d4",
+      "The g7 bishop and ...c5 break undermine the center",
+      "White's massive center is both an asset and a target",
+      "A favorite of Fischer, Kasparov, Carlsen - the great attacking players"
+    ]
+  },
+  {
+    "name": "Catalan Opening",
+    "eco": "E06",
+    "family": "Catalan",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "g3",
+      "d5",
+      "Bg2",
+      "Be7",
+      "Nf3",
+      "O-O",
+      "O-O"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "White combines a queen's pawn opening with a kingside fianchetto. The Catalan bishop exerts lasting pressure.",
+    "ideas": [
+      "The g2 bishop creates lasting long-term pressure on the d5-a8 diagonal",
+      "Black often accepts the c-pawn - leading to the Open Catalan",
+      "White's pressure along the long diagonal is very hard to meet",
+      "A favorite of Vladimir Kramnik and Viswanathan Anand"
+    ]
+  },
+  {
+    "name": "Ruy Lopez Berlin Defense",
+    "eco": "C65",
+    "family": "Ruy Lopez",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bb5",
+      "Nf6",
+      "O-O",
+      "Nxe4",
+      "d4"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "The 'Berlin Wall' - Black trades the bishop pair for a solid endgame structure. Popularized by Kramnik to neutralize Kasparov.",
+    "ideas": [
+      "Black enters a queenless middlegame with a slightly awkward knight",
+      "The Berlin endgame favors the side with better technique",
+      "Kramnik used it to win the 2000 World Championship vs Kasparov",
+      "Deceptively difficult to handle for White despite the apparent simplicity"
+    ]
+  },
+  {
+    "name": "Slav Defense",
+    "eco": "D17",
+    "family": "Slav",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "c6",
+      "Nf3",
+      "Nf6",
+      "Nc3",
+      "dxc4",
+      "a4",
+      "Bf5",
+      "e3"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "One of the most solid responses to the Queen's Gambit. Black supports d5 with c6, keeping the light-squared bishop free.",
+    "ideas": [
+      "c6 supports the d5 pawn without blocking the light-squared bishop",
+      "Black keeps the bishop pair option open, unlike the QGD",
+      "The Slav leads to more dynamic positions than the pure QGD",
+      "Anand, Kramnik, and Gelfand all rely on the Slav at the top level"
+    ]
+  },
+  {
+    "name": "Semi-Slav Defense",
+    "eco": "D45",
+    "family": "Slav",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "c6",
+      "Nf3",
+      "Nf6",
+      "Nc3",
+      "e6",
+      "e3",
+      "Nbd7",
+      "Bd3"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "A hybrid of the Slav and QGD. Rich, complex positions including the notorious Meran and Anti-Meran variations.",
+    "ideas": [
+      "The Semi-Slav combines solidity with counterplay potential",
+      "The Meran (...dxc4, ...b5) is very sharp and theory-heavy",
+      "The Anti-Meran systems keep more tension in the center",
+      "One of the most combative Queen's Pawn structures"
+    ]
+  },
+  {
+    "name": "Reti Opening",
+    "eco": "A07",
+    "family": "Reti",
+    "tier": 2,
+    "moves": [
+      "Nf3",
+      "d5",
+      "g3",
+      "c6",
+      "Bg2",
+      "Nf6",
+      "O-O",
+      "Bg4",
+      "d3",
+      "Nbd7"
+    ],
+    "pawn": "hypermodern",
+    "move1": "Nf3",
+    "desc": "A hypermodern opening by Richard Reti. White fianchettoes and exerts long-range pressure on the center from the flank.",
+    "ideas": [
+      "White avoids all central pawn moves at first",
+      "The g2 bishop targets the long diagonal and d5 indirectly",
+      "Can transpose to Queen's Gambit, English, or pure Reti structures",
+      "A complete system - White adapts to whatever Black plays"
+    ]
+  },
+  {
+    "name": "Vienna Game",
+    "eco": "C26",
+    "family": "Vienna",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "e5",
+      "Nc3",
+      "Nf6",
+      "f4",
+      "d5",
+      "fxe5",
+      "Nxe4",
+      "Nf3"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White builds a strong center with Nc3 before advancing f4. Flexible - can turn sharp or positional.",
+    "ideas": [
+      "Nc3 gives White extra central support before advancing f4",
+      "The Vienna Gambit (f4) leads to sharp attacking play",
+      "Much less theory than the Ruy Lopez - a practical surprise weapon",
+      "Can transpose to King's Gambit setups"
+    ]
+  },
+  {
+    "name": "Evans Gambit",
+    "eco": "C51",
+    "family": "Italian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Bc5",
+      "b4",
+      "Bxb4",
+      "c3"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White sacrifices a pawn for tempo and a powerful center. A Romantic-era gambit still wielded by Kasparov in exhibition games.",
+    "ideas": [
+      "b4 is a pure gambit - White grabs time and center space",
+      "After ...Bxb4, c3 gains more time and builds d4",
+      "White has a magnificent development advantage and space",
+      "Kasparov vs Short, 1995 - one of the most famous Evans Gambit games"
+    ]
+  },
+  {
+    "name": "French Winawer",
+    "eco": "C18",
+    "family": "French",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "e6",
+      "d4",
+      "d5",
+      "Nc3",
+      "Bb4",
+      "e5",
+      "c5",
+      "a3",
+      "Bxc3",
+      "bxc3"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black pins the knight with Bb4 and accepts doubled pawns for White. One of the most unbalanced French variations.",
+    "ideas": [
+      "Black pins the c3-knight immediately - a critical decision",
+      "White gets the bishop pair; Black gets a weak c-pawn to attack",
+      "The resulting positions are extremely unbalanced",
+      "White attacks kingside with their powerful bishops; Black counters with ...c4"
+    ]
+  },
+  {
+    "name": "Alekhine's Defense",
+    "eco": "B04",
+    "family": "Alekhine",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "Nf6",
+      "e5",
+      "Nd5",
+      "d4",
+      "d6",
+      "Nf3",
+      "Nb6",
+      "exd6"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black provocatively invites the White pawns to advance, then undermines them. Named after World Champion Alexander Alekhine.",
+    "ideas": [
+      "The knight tempts White's pawns to overextend",
+      "Black uses the knight as a target to provoke weaknesses",
+      "White must play carefully to justify the space",
+      "A hypermodern classic - Alekhine won with it in 1921"
+    ]
+  },
+  {
+    "name": "Dutch Defense",
+    "eco": "A87",
+    "family": "Dutch",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "f5",
+      "c4",
+      "Nf6",
+      "Nc3",
+      "g6",
+      "Nf3",
+      "Bg7",
+      "g3",
+      "O-O",
+      "Bg2"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "Black immediately fights for e4 and plans a kingside attack. An unbalancing choice that fights for the initiative.",
+    "ideas": [
+      "...f5 controls e4 and plans a kingside attack",
+      "The Leningrad Dutch (g6+Bg7) is the most popular system",
+      "White fights for e5; Black for e4 - a battle of central squares",
+      "A favorite weapon of Mikhail Botvinnik and Bent Larsen"
+    ]
+  },
+  {
+    "name": "Benoni Defense",
+    "eco": "A65",
+    "family": "Benoni",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "c5",
+      "d5",
+      "e6",
+      "Nc3",
+      "exd5",
+      "cxd5",
+      "d6",
+      "e4",
+      "g6"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "Black creates immediate imbalance. White gets space; Black gets dynamic queenside counterplay and the e4-square.",
+    "ideas": [
+      "Black creates fixed pawn structure with pawn on c5 and d6",
+      "White has space advantage; Black has queenside counterplay",
+      "The Bg7 bishop is Black's key piece - targeting the center",
+      "Fischer, Tal, and Geller all loved this dynamic defense"
+    ]
+  },
+  {
+    "name": "Benko Gambit",
+    "eco": "A58",
+    "family": "Benko",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "c5",
+      "d5",
+      "b5",
+      "cxb5",
+      "a6",
+      "bxa6",
+      "Bxa6",
+      "Nc3",
+      "d6"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "Black sacrifices a queenside pawn for long-term pressure. Open a- and b-files give Black lasting initiative.",
+    "ideas": [
+      "Black sacrifices the b-pawn for open a- and b-files",
+      "The long-term positional pressure often justifies the pawn",
+      "Black's queenside initiative can last the entire game",
+      "A system used by GMs as a reliable equalizer against 1.d4"
+    ]
+  },
+  {
+    "name": "Queen's Indian Defense",
+    "eco": "E15",
+    "family": "Queen's Indian",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "Nf3",
+      "b6",
+      "g3",
+      "Ba6",
+      "b3",
+      "Bb7",
+      "Bg2"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "A sophisticated hypermodern defense. Black fianchettoes the queenside bishop to fight for central control from the flank.",
+    "ideas": [
+      "Black fianchettoes with ...b6, Bb7 to control the long diagonal",
+      "Ba6 is a key resource - attacks c4 before White can castle",
+      "The hypermodern battle: pieces control center without occupation",
+      "Kramnik and Karpov built their reputations on this defense"
+    ]
+  },
+  {
+    "name": "Alapin Sicilian",
+    "eco": "B22",
+    "family": "Sicilian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c5",
+      "c3",
+      "Nf6",
+      "e5",
+      "Nd5",
+      "d4",
+      "cxd4",
+      "cxd4",
+      "d6"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "White plays c3 to support a strong d4. Avoids the vast Sicilian theory - a solid, respectable option at all levels.",
+    "ideas": [
+      "c3 prepares d4 without allowing the Sicilian main lines",
+      "White gets a large center but Black can challenge it quickly",
+      "Less theoretical than the Open Sicilian - a good practical choice",
+      "Evgeny Sveshnikov was an early pioneer of this system"
+    ]
+  },
+  {
+    "name": "Philidor Defense",
+    "eco": "C41",
+    "family": "Philidor",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "d6",
+      "d4",
+      "Nf6",
+      "Nc3",
+      "Nbd7",
+      "Bc4"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "Named after the legendary 18th-century master. A solid if passive defense - the Hanham Variation has seen a modern revival.",
+    "ideas": [
+      "Black supports e5 with ...d6 - solid but slightly passive",
+      "The Hanham (...Nbd7 rather than exd4) keeps the center closed",
+      "White gets more space but Black's position is very resilient",
+      "A classical defense that has stood the test of centuries"
+    ]
+  },
+  {
+    "name": "Symmetrical English",
+    "eco": "A35",
+    "family": "English",
+    "tier": 2,
+    "moves": [
+      "c4",
+      "c5",
+      "Nf3",
+      "Nf6",
+      "Nc3",
+      "Nc6",
+      "g3",
+      "g6",
+      "Bg2",
+      "Bg7",
+      "O-O"
+    ],
+    "pawn": "semi-closed",
+    "move1": "c4",
+    "desc": "Both sides mirror each other. White tries to break symmetry; Black uses it to equalize and launch queenside counterplay.",
+    "ideas": [
+      "The symmetrical structure gives Black instant equality if handled well",
+      "White must break symmetry with d4 or e4 at the right moment",
+      "The resulting positions are rich with strategic subtlety",
+      "A favorite of players who enjoy slow, positional maneuvering"
+    ]
+  },
+  {
+    "name": "Bird's Opening",
+    "eco": "A03",
+    "family": "Bird",
+    "tier": 2,
+    "moves": [
+      "f4",
+      "d5",
+      "Nf3",
+      "Nf6",
+      "e3",
+      "g6",
+      "Be2",
+      "Bg7",
+      "O-O",
+      "O-O",
+      "d3"
+    ],
+    "pawn": "semi-open",
+    "move1": "f4",
+    "desc": "White controls e5 with an early f4. Unorthodox and unpredictable - Black can respond with From's Gambit.",
+    "ideas": [
+      "f4 controls e5 and plans a kingside attack in the spirit of the Dutch",
+      "From's Gambit (...e5!?) is Black's sharpest reply",
+      "White's position can be very aggressive but requires exact play",
+      "A solid surprise weapon that avoids main-line theory entirely"
+    ]
+  },
+  {
+    "name": "Larsen's Opening",
+    "eco": "A01",
+    "family": "Larsen",
+    "tier": 2,
+    "moves": [
+      "b3",
+      "e5",
+      "Bb2",
+      "Nc6",
+      "e3",
+      "d5",
+      "Bb5",
+      "Nf6",
+      "Nf3"
+    ],
+    "pawn": "hypermodern",
+    "move1": "b3",
+    "desc": "Bent Larsen's creative fianchetto - White prepares long-range pressure with Bb2. Unpredictable and difficult to prepare against.",
+    "ideas": [
+      "b3 fianchettoes the bishop on b2 for long-range pressure",
+      "The Bb2 bishop controls the long diagonal like a modern hypermodern bishop",
+      "Bent Larsen used this as his main weapon against elite opponents",
+      "Difficult to prepare for - White plays a system rather than a specific line"
+    ]
+  },
+  {
+    "name": "Trompowsky Attack",
+    "eco": "A45",
+    "family": "Trompowsky",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "Nf6",
+      "Bg5",
+      "e6",
+      "e4",
+      "h6",
+      "Bxf6",
+      "Qxf6",
+      "Nc3",
+      "d6"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "White pins the knight immediately with Bg5 - an aggressive choice to avoid deeply memorized Indian defenses.",
+    "ideas": [
+      "Bg5 sidesteps all Indian defense theory",
+      "After Bxf6, Black gets the bishop pair but White avoids their preparation",
+      "A practical weapon - forces Black to think early",
+      "Used by Julian Hodgson and others as a surprise weapon at the top level"
+    ]
+  },
+  {
+    "name": "Ruy Lopez Marshall Attack",
+    "eco": "C89",
+    "family": "Ruy Lopez",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bb5",
+      "a6",
+      "Ba4",
+      "Nf6",
+      "O-O",
+      "Be7",
+      "Re1",
+      "b5",
+      "Bb3",
+      "O-O",
+      "c3",
+      "d5"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "Black sacrifices a pawn for long-term attacking pressure. One of the most deeply analyzed gambits in all of chess theory.",
+    "ideas": [
+      "Black sacrifices a pawn on move 16 for long-term initiative",
+      "The compensation is based on activity, not material",
+      "White has avoided this with the Anti-Marshall systems for decades",
+      "One of the most thoroughly analyzed lines in all of chess theory"
+    ]
+  },
+  {
+    "name": "Sicilian Kan",
+    "eco": "B42",
+    "family": "Sicilian",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "e6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "a6",
+      "Nc3",
+      "Qc7"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black plays a6 for maximum flexibility - can expand with b5 or set up a solid defensive wall. One of the soundest Sicilians.",
+    "ideas": [
+      "a6 is flexible - prevents Nb5 and prepares ...b5",
+      "Black can choose many different setups depending on White's play",
+      "A chameleon opening - very difficult to prepare against",
+      "Anatoly Karpov used this system effectively in many games"
+    ]
+  },
+  {
+    "name": "Sicilian Four Knights",
+    "eco": "B45",
+    "family": "Sicilian",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "e6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "Nc6"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black develops both knights quickly in the Sicilian. A solid, classical approach that avoids the most theoretical lines.",
+    "ideas": [
+      "Four knights appear early - classical development in the Sicilian",
+      "Leads to rich, balanced positions without extreme theory",
+      "White and Black both have many development plans available",
+      "A practical, reliable choice against the Open Sicilian"
+    ]
+  },
+  {
+    "name": "Grunfeld Exchange",
+    "eco": "D85",
+    "family": "Grunfeld",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "d5",
+      "cxd5",
+      "Nxd5",
+      "e4",
+      "Nxc3",
+      "bxc3",
+      "c5"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "The sharpest Grunfeld - Black immediately strikes at the center with c5. Requires precise play from both sides.",
+    "ideas": [
+      "c5 is the immediate counterattack in the Exchange variation",
+      "White must prove the large center is an asset, not a target",
+      "Requires very deep theoretical knowledge from both players",
+      "Has been tested at World Championship level many times"
+    ]
+  },
+  {
+    "name": "King's Indian Smisch",
+    "eco": "E81",
+    "family": "King's Indian",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "Bg7",
+      "e4",
+      "d6",
+      "f3",
+      "O-O",
+      "Be3",
+      "c6"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "White builds an aggressive pawn center with f3. One of the most double-edged King's Indian variations.",
+    "ideas": [
+      "f3 supports e4 and plans g4-g5 - a very aggressive approach",
+      "Black must counterattack quickly or be crushed on the kingside",
+      "...c5 and ...a6+...b5 are Black's main counterplay tries",
+      "Fischer tried to refute this - the debate continues today"
+    ]
+  },
+  {
+    "name": "Bogo-Indian Defense",
+    "eco": "E11",
+    "family": "Bogo-Indian",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "Nf3",
+      "Bb4",
+      "Bd2",
+      "Bxd2",
+      "Qxd2",
+      "d5"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "Black pins with Bb4 before White plays Nc3. A quieter alternative to the Nimzo-Indian with solid, sound structure.",
+    "ideas": [
+      "Bb4 before Nc3 means White can't play Nc3 later with the same effect",
+      "After the exchange, Black gets a solid, symmetrical structure",
+      "Less sharp than the Nimzo-Indian but very reliable",
+      "A classical defense popular in the 1980s-90s at the elite level"
+    ]
+  },
+  {
+    "name": "Budapest Gambit",
+    "eco": "A52",
+    "family": "Budapest",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e5",
+      "dxe5",
+      "Ng4",
+      "Nf3",
+      "Bc5",
+      "e3",
+      "Nc6"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "Black sacrifices a pawn for rapid piece activity and pressure on White's center. A tricky surprise weapon.",
+    "ideas": [
+      "Black sacrifices the e-pawn for rapid development and pressure",
+      "The Fajarowicz (3...Ne4!?) is an even sharper gambit line",
+      "White must return the pawn carefully to avoid getting crushed",
+      "A dangerous surprise weapon that has caught many GMs off guard"
+    ]
+  },
+  {
+    "name": "Dutch Stonewall",
+    "eco": "A90",
+    "family": "Dutch",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "f5",
+      "c4",
+      "e6",
+      "Nc3",
+      "Nf6",
+      "Nf3",
+      "d5",
+      "e3",
+      "c6",
+      "Bd3",
+      "Bd6"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "Black builds a rigid pawn chain e6-d5-f5 and attacks on the kingside. A predictable but effective system used by Botvinnik.",
+    "ideas": [
+      "The fixed pawn chain (e6, d5, f5) gives Black a clear kingside plan",
+      "The f4 square becomes a key outpost for Black's pieces",
+      "White must create counterplay with e4 or the queenside minority attack",
+      "Botvinnik and Aronian have used this as a reliable weapon"
+    ]
+  },
+  {
+    "name": "Neo-Grunfeld",
+    "eco": "D71",
+    "family": "Grunfeld",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "g3",
+      "d5",
+      "Bg2",
+      "Bg7",
+      "cxd5",
+      "Nxd5",
+      "Nf3"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "White avoids Nc3 to sidestep the main Grunfeld. A positional treatment keeping more structure.",
+    "ideas": [
+      "White avoids the classical Nc3 - sidesteps main Grunfeld theory",
+      "The g3 + Bg2 setup leads to positional, technical play",
+      "Black's g7 bishop still has long-range power but White has structure",
+      "A quieter but demanding way to handle the Grunfeld"
+    ]
+  },
+  {
+    "name": "Catalan Open",
+    "eco": "E04",
+    "family": "Catalan",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "g3",
+      "d5",
+      "Bg2",
+      "dxc4",
+      "Nf3",
+      "c5",
+      "O-O"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "Black accepts the gambit pawn in the Catalan. Rich, imbalanced positions - White's bishop pair vs Black's extra pawn.",
+    "ideas": [
+      "Black takes the c4 pawn - White's bishop pair must justify the imbalance",
+      "White's g2 bishop becomes very powerful once the center opens",
+      "...c5 is Black's key counterattacking move to challenge the center",
+      "A rich theoretical battle that requires exact knowledge"
+    ]
+  },
+  {
+    "name": "Torre Attack",
+    "eco": "A46",
+    "family": "Torre",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "Nf3",
+      "e6",
+      "Bg5",
+      "c5",
+      "c3",
+      "Qb6",
+      "Qb3",
+      "Nc6"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "White pins the knight with Bg5 without committing c4. A solid system with queenside pressure and positional goals.",
+    "ideas": [
+      "Bg5 pins the knight before Black can prevent it",
+      "White avoids the Indian defense theory by playing Bg5 early",
+      "The Qb3 square gives White queenside pressure",
+      "A solid 'anti-theory' weapon popular at amateur and club level"
+    ]
+  },
+  {
+    "name": "Polish Opening",
+    "eco": "A00",
+    "family": "Polish",
+    "tier": 3,
+    "moves": [
+      "b4",
+      "e5",
+      "Bb2",
+      "Bxb4",
+      "Bxe5",
+      "Nf6",
+      "Nf3",
+      "O-O",
+      "e3"
+    ],
+    "pawn": "hypermodern",
+    "move1": "b4",
+    "desc": "The 'Orangutan' - throws Black off balance immediately. Named by Tartakower after the Bronx Zoo's orangutan.",
+    "ideas": [
+      "b4 immediately throws Black off their preparation",
+      "White's Bb2 aims for the long diagonal and pressure on e5",
+      "Very difficult for Black to prepare against",
+      "Named after an orangutan - Tartakower bet on a chess game with an orangutan!"
+    ]
+  },
+  {
+    "name": "Smith-Morra Gambit",
+    "eco": "B21",
+    "family": "Sicilian",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "c5",
+      "d4",
+      "cxd4",
+      "c3",
+      "dxc3",
+      "Nxc3",
+      "Nc6",
+      "Nf3",
+      "d6",
+      "Bc4"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "White sacrifices a pawn for rapid development against the Sicilian. Dangerous if Black is unprepared.",
+    "ideas": [
+      "White sacrifices the c-pawn for rapid development",
+      "The compensation: lead in development, open c-file, active pieces",
+      "Marc Esserman has revived this gambit at the GM level",
+      "A feared surprise weapon at club level - very practical choice"
+    ]
+  },
+  {
+    "name": "Grand Prix Attack",
+    "eco": "B23",
+    "family": "Sicilian",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "c5",
+      "Nc3",
+      "Nc6",
+      "f4",
+      "g6",
+      "Nf3",
+      "Bg7",
+      "Bb5",
+      "Nd4",
+      "O-O"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "White attacks the Sicilian with an early f4, aiming for a kingside attack before Black can organize.",
+    "ideas": [
+      "f4 plans an early e5 advance and kingside attack",
+      "Avoids the Open Sicilian - a complete anti-Sicilian system",
+      "Very dangerous if Black tries to play slowly",
+      "Short and Emms popularized this at grandmaster level"
+    ]
+  },
+  {
+    "name": "King's Indian Attack",
+    "eco": "A08",
+    "family": "King's Indian Attack",
+    "tier": 3,
+    "moves": [
+      "Nf3",
+      "d5",
+      "g3",
+      "Nf6",
+      "Bg2",
+      "c6",
+      "O-O",
+      "Bg4",
+      "d3",
+      "Nbd7",
+      "Nbd2"
+    ],
+    "pawn": "hypermodern",
+    "move1": "Nf3",
+    "desc": "White builds the KID structure regardless of Black's setup. A complete system favored by Fischer against the French.",
+    "ideas": [
+      "White builds a complete system - Nf3, g3, Bg2, d3, Nbd2",
+      "Very flexible - works against the French, Sicilian, and other defenses",
+      "Fischer loved this against the French Defense",
+      "White attacks with e5 and f4 - a typical kingside setup"
+    ]
+  },
+  {
+    "name": "Nimzo-Larsen Attack",
+    "eco": "A01",
+    "family": "Larsen",
+    "tier": 3,
+    "moves": [
+      "b3",
+      "e5",
+      "Bb2",
+      "Nc6",
+      "Nf3",
+      "e4",
+      "Nd4",
+      "Nxd4",
+      "Bxd4"
+    ],
+    "pawn": "hypermodern",
+    "move1": "b3",
+    "desc": "White fianchettoes the queen's bishop on b2. An aggressive flank opening dominating the long diagonal.",
+    "ideas": [
+      "A sharp version of Larsen's Opening - Nf3 delays the fianchetto",
+      "The Bb2 controls the long diagonal very powerfully",
+      "After Nxd4, White has the bishop pair and an open position",
+      "Used by Bent Larsen to defeat some of the world's best players"
+    ]
+  },
+  {
+    "name": "Blackmar-Diemer Gambit",
+    "eco": "D00",
+    "family": "Blackmar-Diemer",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "d5",
+      "e4",
+      "dxe4",
+      "Nc3",
+      "Nf6",
+      "f3",
+      "exf3",
+      "Nxf3",
+      "Bg4"
+    ],
+    "pawn": "open",
+    "move1": "d4",
+    "desc": "White sacrifices a pawn - often a second - for rapid development and a fierce attack. Dangerous in amateur play.",
+    "ideas": [
+      "White sacrifices one or two pawns for a ferocious attack",
+      "The development lead is spectacular - all White pieces come out fast",
+      "Black must be precise to hold the material advantage",
+      "A dangerous weapon below master level - hard to defend without preparation"
+    ]
+  },
+  {
+    "name": "Veresov Attack",
+    "eco": "D01",
+    "family": "Veresov",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "Nc3",
+      "d5",
+      "Bg5",
+      "Nbd7",
+      "Nf3",
+      "h6",
+      "Bxf6",
+      "Nxf6"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "White develops the bishop aggressively before Nf3. Named after Soviet GM Georgy Veresov - rarely seen but tricky.",
+    "ideas": [
+      "Bg5 is played before Nf3 - an unorthodox development order",
+      "White avoids Indian defense theory",
+      "After Bxf6, White has an open g-file and aggressive possibilities",
+      "A rare surprise weapon that can cause discomfort for unprepared opponents"
+    ]
+  },
+  {
+    "name": "Owen's Defense",
+    "eco": "B00",
+    "family": "Owen",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "b6",
+      "d4",
+      "Bb7",
+      "Bd3",
+      "Nf6",
+      "Nf3",
+      "e6",
+      "Qe2",
+      "c5"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black fianchettoes the queen's bishop immediately. An unorthodox and tricky defense that can confuse unprepared White players.",
+    "ideas": [
+      "b6 and Bb7 immediately challenge the e4 square from the flank",
+      "Very rare - most White players won't know the correct response",
+      "The long diagonal pressure from b7 can be very annoying",
+      "An extremely unusual defense that requires creativity from both sides"
+    ]
+  },
+  {
+    "name": "Sicilian Grand Prix Attack",
+    "eco": "B23",
+    "family": "Sicilian",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "c5",
+      "Nc3",
+      "a6",
+      "f4",
+      "b5",
+      "Nf3",
+      "Bb7",
+      "Be2",
+      "e6"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Against ...a6 Sicilians, White immediately strikes with f4 - an anti-theoretical kingside attack.",
+    "ideas": [
+      "f4 creates immediate kingside pressure before Black can organize",
+      "White avoids the complex Open Sicilian main lines",
+      "The setup is easy to learn but the attack is genuinely dangerous",
+      "Particularly effective against players who play ...a6 Sicilian setups"
+    ]
+  },
+  {
+    "name": "Colle System",
+    "eco": "D05",
+    "family": "Colle",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "d5",
+      "Nf3",
+      "Nf6",
+      "e3",
+      "e6",
+      "Bd3",
+      "c5",
+      "c3",
+      "Nc6",
+      "Nbd2"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "White builds a solid setup with e3, Bd3 - then unleashes a kingside attack. A reliable system for club players.",
+    "ideas": [
+      "A simple, systematic setup with clear plans",
+      "White's attack comes from f4-f5 or e4 pawn breaks",
+      "Very little theory to memorize - White plays the same moves every game",
+      "Edgar Colle developed this in the 1920s - still effective today"
+    ]
+  },
+  {
+    "name": "Nimzowitsch-Larsen Attack",
+    "eco": "A06",
+    "family": "Larsen",
+    "tier": 3,
+    "moves": [
+      "Nf3",
+      "d5",
+      "b3",
+      "c5",
+      "Bb2",
+      "Nc6",
+      "e3",
+      "e5",
+      "d3",
+      "Nf6"
+    ],
+    "pawn": "hypermodern",
+    "move1": "Nf3",
+    "desc": "A hybrid of Nimzowitsch and Larsen ideas - combining Nf3 with b3/Bb2. Subtle and difficult to handle.",
+    "ideas": [
+      "Combines hypermodern ideas with solid development",
+      "The Bb2 bishop is the key piece - it controls long diagonals",
+      "White avoids early pawn commitments and keeps maximum flexibility",
+      "A rare but tricky choice that forces Black to think independently"
+    ]
+  },
+  {
+    "name": "Sicilian Richter-Rauzer",
+    "eco": "B60",
+    "family": "Sicilian",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "d6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "Nc6",
+      "Bg5"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "White pins the knight with Bg5 in the Sicilian - creating direct pressure and planning Qd2+O-O-O.",
+    "ideas": [
+      "Bg5 creates immediate pressure on f6 - planning Qd2 and queenside castling",
+      "White often attacks with f4-f5 after opposite-side castling",
+      "A classical, aggressive way to handle the Sicilian",
+      "Very theoretical but leads to exciting, double-edged positions"
+    ]
+  },
+  {
+    "name": "King's Indian Classical",
+    "eco": "E91",
+    "family": "King's Indian",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "Bg7",
+      "e4",
+      "d6",
+      "Nf3",
+      "O-O",
+      "Be2",
+      "Nc6"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "The most solid King's Indian system. White plays Be2 and aims for positional control rather than immediate attack.",
+    "ideas": [
+      "Be2 is a modest but solid development - avoiding overextension",
+      "White plans Nd2-f1 to fight for control of d5",
+      "Black seeks counterplay with ...e5 or ...c5",
+      "One of the most studied openings in chess - incredibly deep theory"
+    ]
+  },
+  {
+    "name": "London System Classical",
+    "eco": "D02",
+    "family": "London",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "d5",
+      "Bf4",
+      "Nf6",
+      "Nf3",
+      "c5",
+      "e3",
+      "Nc6",
+      "c3",
+      "e6",
+      "Bd3"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "The full Classical London - White completes development systematically before deciding where to attack.",
+    "ideas": [
+      "White develops all pieces harmoniously before committing to a plan",
+      "The Bd3 bishop eyes the h7 pawn after h6 by Black",
+      "Very popular at club level - easy to learn but hard to master",
+      "Magnus Carlsen has revived this at the very top level of the game"
+    ]
+  },
+  {
+    "name": "Two Knights Defense",
+    "eco": "C55",
+    "family": "Italian",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Nf6",
+      "Ng5",
+      "d5",
+      "exd5"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "Black boldly counterattacks with 3...Nf6 instead of 3...Bc5. One of chess's oldest and sharpest open games - full of traps and brilliancies.",
+    "ideas": [
+      "Nf6 attacks e4 immediately rather than defending",
+      "Ng5 by White targets the f7 weakness - very aggressive",
+      "The Fried Liver Attack (Nxf7) is one of chess's most spectacular gambits",
+      "Black must know the theory or face a devastating attack"
+    ]
+  },
+  {
+    "name": "Ponziani Opening",
+    "eco": "C44",
+    "family": "Ponziani",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "c3",
+      "Nf6",
+      "d4",
+      "exd4",
+      "e5"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White immediately prepares d4 with c3. An old opening revived at modern amateur level - tricky and underestimated.",
+    "ideas": [
+      "c3 prepares the d4 push without exchanging on d4",
+      "A solid but ambitious early center claim",
+      "The Ponziani Gambit lines are extremely sharp",
+      "Rare enough that most opponents won't know the theory"
+    ]
+  },
+  {
+    "name": "Vienna Gambit",
+    "eco": "C29",
+    "family": "Vienna",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Nc3",
+      "Nf6",
+      "f4",
+      "d5",
+      "fxe5",
+      "Nxe4",
+      "Nf3"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White plays f4 in the Vienna Game, creating a King's Gambit-style attack. Sharp, forcing, and dangerous for the unprepared.",
+    "ideas": [
+      "f4 in the Vienna turns it into a gambit-style attack",
+      "White gets a strong center and open f-file for attack",
+      "Black's best reply is the sharp 2...d5 counter",
+      "An aggressive choice that leads to complex tactical battles"
+    ]
+  },
+  {
+    "name": "Giuoco Piano",
+    "eco": "C50",
+    "family": "Italian",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Bc5",
+      "Nc3",
+      "Nf6",
+      "d3"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "The quiet Italian - White builds slowly with d3 instead of the sharp c3-d4. A solid positional game in the Italian tradition.",
+    "ideas": [
+      "d3 instead of c3 - a slower, more positional approach",
+      "White aims for f4-f5 or slow maneuvering",
+      "Less theory than the classical Italian - good for club players",
+      "The Giuoco Pianissimo (very quiet game) - strategic patience"
+    ]
+  },
+  {
+    "name": "Ruy Lopez Exchange",
+    "eco": "C68",
+    "family": "Ruy Lopez",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bb5",
+      "a6",
+      "Bxc6",
+      "dxc6",
+      "O-O",
+      "f6",
+      "d4"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White immediately captures on c6, giving Black doubled pawns in exchange for the bishop pair. A strategic choice favored by Bobby Fischer.",
+    "ideas": [
+      "Bxc6 gives Black doubled pawns but grants them the bishop pair",
+      "White gets a structural advantage; Black gets active pieces",
+      "Fischer used this repeatedly - it's deceptively dangerous",
+      "The endgame often favors White's pawn structure advantage"
+    ]
+  },
+  {
+    "name": "Spanish Four Knights",
+    "eco": "C49",
+    "family": "Four Knights",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Nc3",
+      "Nf6",
+      "Bb5",
+      "Bb4",
+      "O-O",
+      "O-O"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "The Four Knights with Bb5 - a symmetrical, solid game where both sides mirror development. Quiet but full of hidden tension.",
+    "ideas": [
+      "Both sides mirror development - extremely symmetrical",
+      "White breaks symmetry with Nd5 or d4 at the right moment",
+      "A safe, solid opening ideal for beginners wanting sound structure",
+      "The Double Ruy Lopez - less theory than the pure Ruy Lopez"
+    ]
+  },
+  {
+    "name": "Accelerated Dragon",
+    "eco": "B35",
+    "family": "Sicilian",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "Nc6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "g6",
+      "Nc3",
+      "Bg7"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black fianchettoes immediately without playing d6, reaching a Dragon-like position without the Yugoslav Attack. More flexible than the Dragon.",
+    "ideas": [
+      "g6 before d6 avoids the feared Yugoslav Attack",
+      "Black aims for ...d5 in one move - more aggressive than the Dragon",
+      "White has fewer dangerous attacking setups",
+      "A pragmatic Sicilian choice popular at all levels"
+    ]
+  },
+  {
+    "name": "Modern Defense",
+    "eco": "B06",
+    "family": "Modern",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "g6",
+      "d4",
+      "Bg7",
+      "Nc3",
+      "d6",
+      "f4",
+      "Nf6",
+      "Nf3"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black delays ...Nf6 and lets White build a large center, then undermines it. Related to the Pirc but even more flexible.",
+    "ideas": [
+      "g6 and Bg7 without committing the knight yet",
+      "Black waits to see where White places all pieces before reacting",
+      "Very flexible - Black can transpose to many systems",
+      "Tigran Petrosian and Mikhail Basman used this as a surprise weapon"
+    ]
+  },
+  {
+    "name": "Stonewall Attack",
+    "eco": "D00",
+    "family": "Stonewall",
+    "tier": 1,
+    "moves": [
+      "d4",
+      "d5",
+      "e3",
+      "Nf6",
+      "Bd3",
+      "c5",
+      "c3",
+      "Nc6",
+      "f4"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "White builds an impenetrable pawn structure on d4-e3-f4-c3 and launches a kingside attack. Simple plans, dangerous if Black doesn't know the antidotes.",
+    "ideas": [
+      "The pawn chain d4-e3-f4 forms the 'stonewall' - solid but slow",
+      "White's attack goes via e5 or f5 pawn advances",
+      "Black should immediately target the weak e5 square",
+      "Very effective at club level where Black doesn't know the correct setup"
+    ]
+  },
+  {
+    "name": "Sicilian Taimanov",
+    "eco": "B46",
+    "family": "Sicilian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "e6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nc6",
+      "Nc3",
+      "a6"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black develops flexibly with ...Nc6 and ...e6, keeping many options open. A solid, flexible Sicilian with queenside counterplay.",
+    "ideas": [
+      "Nc6 + e6 is a flexible setup without committing the knight to f6 early",
+      "Black keeps the option of ...Nge7 or ...Nf6 depending on White's setup",
+      "Used extensively by Taimanov himself in World Championship matches",
+      "A good choice for players who like solid, complex Sicilian positions"
+    ]
+  },
+  {
+    "name": "Sicilian Classical",
+    "eco": "B56",
+    "family": "Sicilian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "Nc6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "d6",
+      "Bg5"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "The Classical Sicilian with an early Bg5. White pins the knight and creates Richter-Rauzer-style pressure before Black is ready.",
+    "ideas": [
+      "Bg5 creates immediate pressure before Black develops the kingside",
+      "Planning Qd2 and O-O-O for a queenside kingside attack",
+      "Black must choose between ...Bd7 or ...e6 carefully",
+      "A sophisticated, strategically deep Sicilian system"
+    ]
+  },
+  {
+    "name": "French Advance",
+    "eco": "C02",
+    "family": "French",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "e6",
+      "d4",
+      "d5",
+      "e5",
+      "c5",
+      "c3",
+      "Nc6",
+      "Nf3",
+      "Qb6"
+    ],
+    "pawn": "closed",
+    "move1": "e4",
+    "desc": "White advances with e5 and builds a space advantage. Black immediately attacks with ...c5. One of the most strategically rich French variations.",
+    "ideas": [
+      "e5 immediately closes the center and gives White space",
+      "Black attacks the d4 pawn with ...c5 - the thematic break",
+      "White must defend d4 and attack on the kingside simultaneously",
+      "Nigel Short popularized the sharp h4 attack in this variation"
+    ]
+  },
+  {
+    "name": "Caro-Kann Classical",
+    "eco": "B18",
+    "family": "Caro-Kann",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c6",
+      "d4",
+      "d5",
+      "Nc3",
+      "dxe4",
+      "Nxe4",
+      "Bf5",
+      "Ng3",
+      "Bg6",
+      "h4",
+      "h6"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black develops the bishop actively to f5 - the Classical Caro. White immediately harasses it with h4. A rich strategic battle.",
+    "ideas": [
+      "Bf5 is the cleanest Caro-Kann development - the bishop gets outside the pawn chain",
+      "h4 by White immediately challenges the bishop's stability",
+      "Black's structure is extremely solid - hard to attack",
+      "Karpov's favorite defense - shows why it's called the Classical"
+    ]
+  },
+  {
+    "name": "King's Indian Fianchetto",
+    "eco": "E62",
+    "family": "King's Indian",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nf3",
+      "Bg7",
+      "g3",
+      "O-O",
+      "Bg2",
+      "d6",
+      "Nc3",
+      "Nbd7"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "White meets the KID with a fianchetto rather than e4. A quieter positional system that avoids the main tactical battles.",
+    "ideas": [
+      "The fianchetto avoids the wild tactical lines of the Classical KID",
+      "White controls e4 from afar with the g2 bishop",
+      "This is a positional squeeze - White slowly outplays Black",
+      "Vladimir Kramnik used this system effectively as a drawing weapon"
+    ]
+  },
+  {
+    "name": "Queen's Gambit Accepted",
+    "eco": "D26",
+    "family": "Queen's Gambit",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "dxc4",
+      "Nf3",
+      "Nf6",
+      "e3",
+      "e6",
+      "Bxc4",
+      "c5",
+      "O-O"
+    ],
+    "pawn": "semi-open",
+    "move1": "d4",
+    "desc": "Black accepts the c4 pawn and fights to keep it. White regains it and gets a slight development advantage - a sharp theoretical battle.",
+    "ideas": [
+      "Black accepts the pawn and tries to hold it with ...b5",
+      "White regains material and gets an IQP (isolated queen pawn)",
+      "The IQP gives White attacking chances in exchange for a long-term weakness",
+      "Viswanathan Anand used this in World Championship matches"
+    ]
+  },
+  {
+    "name": "Exchange French",
+    "eco": "C01",
+    "family": "French",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "e6",
+      "d4",
+      "d5",
+      "exd5",
+      "exd5",
+      "Nf3",
+      "Nf6",
+      "Bd3",
+      "Bd6",
+      "Qe2"
+    ],
+    "pawn": "closed",
+    "move1": "e4",
+    "desc": "White exchanges pawns in the French, reaching a symmetrical position. Solid but aims to exploit the isolated d-pawn and bishop pair.",
+    "ideas": [
+      "The exchange creates a symmetrical position but gives White slightly better piece activity",
+      "White's Qe2 controls e5 and prepares castling quickly",
+      "Black's d5 pawn can become a target in the endgame",
+      "A practical choice if White wants to avoid the theoretical Winawer or Advance"
+    ]
+  },
+  {
+    "name": "Semi-Tarrasch",
+    "eco": "D41",
+    "family": "Queen's Gambit",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "e6",
+      "Nc3",
+      "Nf6",
+      "Nf3",
+      "c5",
+      "cxd5",
+      "Nxd5"
+    ],
+    "pawn": "semi-open",
+    "move1": "d4",
+    "desc": "Black recaptures with the knight, getting an isolated pawn position with active piece play. A dynamic alternative to the regular Tarrasch.",
+    "ideas": [
+      "Nxd5 recapture creates an IQP but very active pieces",
+      "The central pawn creates both weakness and dynamic piece activity",
+      "Black's pieces have excellent outposts - d5 for the knight",
+      "A fighting defense used by Kasparov and Anand in key matches"
+    ]
+  },
+  {
+    "name": "Sicilian O'Kelly",
+    "eco": "B28",
+    "family": "Sicilian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "a6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "e5"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "The ...a6 Sicilian - Black prepares ...b5 before committing pieces. A flexible, somewhat mysterious defense used by Kasparov.",
+    "ideas": [
+      "a6 is a mysterious but useful move - prepares ...b5 expansion",
+      "Black keeps the option of many different setups",
+      "Very difficult to prepare against - many possible White responses",
+      "Kasparov used this in rapid games to avoid preparation"
+    ]
+  },
+  {
+    "name": "Ruy Lopez Chigorin",
+    "eco": "C92",
+    "family": "Ruy Lopez",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bb5",
+      "a6",
+      "Ba4",
+      "Nf6",
+      "O-O",
+      "Be7",
+      "Re1",
+      "b5",
+      "Bb3",
+      "O-O",
+      "h3",
+      "Na5"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "Black's knight retreats to a5 to attack the bishop and prepare ...c5. One of the richest and most complex Ruy Lopez variations.",
+    "ideas": [
+      "Na5 attacks the Bb3 and prepares ...c5 queenside counterplay",
+      "Black aims for ...d5 to break the center",
+      "White's strong center and kingside chances vs Black's queenside counterplay",
+      "Deeply analyzed - one of the most theoretical chess openings ever"
+    ]
+  },
+  {
+    "name": "Tarrasch Defense",
+    "eco": "D32",
+    "family": "Queen's Gambit",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "e6",
+      "Nc3",
+      "c5",
+      "cxd5",
+      "exd5",
+      "Nf3",
+      "Nc6",
+      "g3"
+    ],
+    "pawn": "semi-open",
+    "move1": "d4",
+    "desc": "Black plays ...c5 in the Queen's Gambit, accepting an isolated pawn for active piece play. A controversial but dynamic defense.",
+    "ideas": [
+      "...c5 creates an IQP - a weakness but also dynamic piece activity",
+      "Black's central pawns can advance and create threats",
+      "White targets the isolated d5 pawn in the endgame",
+      "Kasparov used this in his 1985 World Championship match against Karpov"
+    ]
+  },
+  {
+    "name": "Sicilian Paulsen",
+    "eco": "B41",
+    "family": "Sicilian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "e6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "a6",
+      "Nc3",
+      "Qc7"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black plays solidly with ...e6 and ...a6, building a flexible queenside structure. The Paulsen is the ancestor of the Kan and Taimanov.",
+    "ideas": [
+      "a6 prevents Nb5 and prepares ...b5 expansion",
+      "Qc7 defends c5 after ...b5 and prepares queenside play",
+      "Extremely flexible - Black can choose many different setups",
+      "Mikhail Tal and Paul Keres used this as a reliable Black weapon"
+    ]
+  },
+  {
+    "name": "London System Anti-Fianchetto",
+    "eco": "D03",
+    "family": "London",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "Nf6",
+      "Nf3",
+      "g6",
+      "Bg5",
+      "Bg7",
+      "Nbd2",
+      "O-O",
+      "e3",
+      "d6",
+      "c3"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "White meets the King's Indian fianchetto with Bg5 instead of Bf4. Creates immediate pin pressure and avoids main King's Indian theory.",
+    "ideas": [
+      "Bg5 pins the f6 knight - unusual and disruptive against KID players",
+      "White avoids the complex King's Indian main lines",
+      "The Bg5 system is very solid and hard for Black to generate counterplay against",
+      "A good practical choice against players who love the King's Indian"
+    ]
+  },
+  {
+    "name": "Ruy Lopez Open Variation",
+    "eco": "C80",
+    "family": "Ruy Lopez",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bb5",
+      "a6",
+      "Ba4",
+      "Nf6",
+      "O-O",
+      "Nxe4",
+      "d4",
+      "b5",
+      "Bb3",
+      "d5"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "Black wins back the pawn and enters a sharp, double-edged middlegame. The Open Variation leads to some of the wildest positions in chess theory.",
+    "ideas": [
+      "Nxe4 captures the e4 pawn - a sharp, dynamic choice",
+      "d5 breaks the center and creates immediate counterplay",
+      "The resulting positions are extremely sharp and tactical",
+      "One of Che Guevara's favorites - he played it throughout his life"
+    ]
+  },
+  {
+    "name": "Sicilian Pelikan",
+    "eco": "B33",
+    "family": "Sicilian",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "Nc6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "e5",
+      "Nb5",
+      "d6",
+      "Bg5"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black boldly plays ...e5, accepting a backwards pawn on d6. An earlier version of the Sveshnikov - dynamic and double-edged.",
+    "ideas": [
+      "e5 boldly occupies the center despite creating a backwards d6 pawn",
+      "Black's ...a6 and ...b5 queenside expansion is the key counterplay",
+      "White's Nd5 outpost is permanent but Black gets the bishop pair",
+      "A sharp, fighting Sicilian with complex strategic and tactical themes"
+    ]
+  },
+  {
+    "name": "Sicilian Sozin",
+    "eco": "B57",
+    "family": "Sicilian",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "Nc6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "d6",
+      "Bc4"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "White places the bishop on c4, directly targeting f7. A sharp attacking system that Fischer used to devastating effect.",
+    "ideas": [
+      "Bc4 aims at f7 and creates immediate threats against Black's king",
+      "White often sacrifices on d5 or b5 for a powerful attack",
+      "Bobby Fischer used this system to crush numerous opponents",
+      "Extremely dangerous if Black doesn't know the exact defensive lines"
+    ]
+  },
+  {
+    "name": "Ruy Lopez Breyer",
+    "eco": "C94",
+    "family": "Ruy Lopez",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bb5",
+      "a6",
+      "Ba4",
+      "Nf6",
+      "O-O",
+      "Be7",
+      "Re1",
+      "b5",
+      "Bb3",
+      "O-O",
+      "h3",
+      "Nb8"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "Black retreats the knight all the way to b8 to reroute it to d7. One of the deepest and most profound Ruy Lopez systems.",
+    "ideas": [
+      "Nb8 is a profound regrouping - the knight heads to d7 via b8",
+      "Black builds a completely new position from scratch",
+      "A very slow system that requires deep understanding to play",
+      "Anatoly Karpov made this a cornerstone of his opening repertoire"
+    ]
+  },
+  {
+    "name": "King's Indian Averbakh",
+    "eco": "E73",
+    "family": "King's Indian",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "Bg7",
+      "e4",
+      "d6",
+      "Be2",
+      "O-O",
+      "Bg5"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "White prevents Black's ...e5 with Bg5. A strategic system that aims to neutralize the King's Indian counterplay.",
+    "ideas": [
+      "Bg5 prevents the ...e5 break - Black's most important counterattacking move",
+      "White plans f4 and aims for a kingside attack without allowing ...e5",
+      "Black must seek alternative counterplay via ...c5 or ...Na6-c5",
+      "A positional system that avoids the explosive KID theory"
+    ]
+  },
+  {
+    "name": "Catalan Closed",
+    "eco": "E06",
+    "family": "Catalan",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "g3",
+      "d5",
+      "Bg2",
+      "Be7",
+      "Nf3",
+      "O-O",
+      "O-O",
+      "dxc4"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "Black holds the c4 pawn in the Catalan. A rich theoretical battle - White's active pieces vs Black's extra pawn.",
+    "ideas": [
+      "Black holds the c4 pawn - forcing White to win it back actively",
+      "White's g2 bishop becomes a monster once the center opens",
+      "The a2-a4 plan is White's standard way to regain the pawn",
+      "One of the most theoretically demanding openings at the elite level"
+    ]
+  },
+  {
+    "name": "Anti-Sicilian c3 Alapin",
+    "eco": "B22",
+    "family": "Sicilian",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "c5",
+      "c3",
+      "Nf6",
+      "e5",
+      "Nd5",
+      "d4",
+      "cxd4",
+      "Nf3",
+      "e6",
+      "cxd4"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "White builds a strong center with c3-d4 without allowing the Open Sicilian. A solid anti-theoretical weapon favored by many top GMs.",
+    "ideas": [
+      "c3 avoids all the sharp Open Sicilian theory",
+      "White builds a strong pawn center and fights for space",
+      "Nf6 is the sharpest response - immediately challenging e5",
+      "Sergei Tiviakov made a career of playing this system"
+    ]
+  },
+  {
+    "name": "Sicilian Accelerated Fianchetto",
+    "eco": "B34",
+    "family": "Sicilian",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "Nc6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "g6",
+      "Nc3",
+      "Bg7",
+      "Be3",
+      "Nf6",
+      "Bc4"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "The Accelerated Dragon with Bg7 early. White's Bc4 creates pressure on d5 and e6, leading to very sharp tactical positions.",
+    "ideas": [
+      "Bg7 fianchetto in the Accelerated Dragon creates long-range pressure",
+      "Bc4 targets d5 and e6 - Black must be careful",
+      "The ...d5 break is Black's key counter - timing is everything",
+      "Rich tactical complications in many lines"
+    ]
+  },
+  {
+    "name": "Nimzo-Indian Rubinstein",
+    "eco": "E46",
+    "family": "Nimzo-Indian",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "Nc3",
+      "Bb4",
+      "e3",
+      "b6",
+      "Nge2",
+      "Ba6",
+      "a3",
+      "Bxc3"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "White plays e3, intending Nge2 to avoid doubling pawns. One of the most solid Nimzo-Indian systems - classical and positional.",
+    "ideas": [
+      "e3 prevents doubled pawns after ...Bxc3",
+      "Nge2 is the key knight development - avoids blocking the f-pawn",
+      "White aims for a slow positional squeeze",
+      "A deeply theoretical system that requires precise knowledge"
+    ]
+  },
+  {
+    "name": "Queen's Gambit Declined Orthodox",
+    "eco": "D63",
+    "family": "Queen's Gambit",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "e6",
+      "Nc3",
+      "Nf6",
+      "Bg5",
+      "Be7",
+      "e3",
+      "O-O",
+      "Nf3",
+      "Nbd7",
+      "Rc1"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "The Orthodox QGD - a deeply classical system. White prepares the minority attack on the queenside while Black fights for central counterplay.",
+    "ideas": [
+      "Be7 is the most solid bishop development in the QGD",
+      "White's minority attack (b4-b5) is the standard queenside plan",
+      "Black counters with ...dxc4 and ...c5 at the right moment",
+      "One of the most analyzed systems in all of chess - pure classical chess"
+    ]
+  },
+  {
+    "name": "French Tarrasch",
+    "eco": "C03",
+    "family": "French",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "e6",
+      "d4",
+      "d5",
+      "Nd2",
+      "Nf6",
+      "e5",
+      "Nfd7",
+      "Bd3",
+      "c5",
+      "c3",
+      "Nc6"
+    ],
+    "pawn": "closed",
+    "move1": "e4",
+    "desc": "White plays Nd2 in the French, keeping the c3 square free and avoiding the Nimzovich pin. A solid, flexible treatment.",
+    "ideas": [
+      "Nd2 avoids the Nimzovich pin ...Bb4 that would follow Nc3",
+      "White keeps maximum flexibility in the center",
+      "Black must be careful about the e5 space advantage",
+      "Used by Karpov extensively - leads to rich strategic play"
+    ]
+  },
+  {
+    "name": "Old Indian Defense",
+    "eco": "A55",
+    "family": "Old Indian",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "d6",
+      "Nc3",
+      "Nbd7",
+      "e4",
+      "e5",
+      "Nf3",
+      "Be7",
+      "Be2",
+      "O-O"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "Black plays ...d6 and ...e5 without the fianchetto of the King's Indian. A solid but slightly passive setup with slow queenside counterplay.",
+    "ideas": [
+      "A solid but less dynamic alternative to the King's Indian",
+      "Black's setup is extremely solid - hard to break down",
+      "White has space and must convert it carefully",
+      "A practical choice for players wanting a safe, defensive structure"
+    ]
+  },
+  {
+    "name": "Caro-Kann Panov Attack",
+    "eco": "B14",
+    "family": "Caro-Kann",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "c6",
+      "d4",
+      "d5",
+      "exd5",
+      "cxd5",
+      "c4",
+      "Nf6",
+      "Nc3",
+      "e6",
+      "Nf3",
+      "Bb4"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "White plays c4 after the exchange, creating an IQP position. The Panov Attack transforms the Caro-Kann into sharp, dynamic play.",
+    "ideas": [
+      "c4 after the exchange transforms the Caro-Kann into an IQP game",
+      "White gets active piece play; Black gets a solid structure",
+      "The IQP d4 gives White attacking chances but is a long-term weakness",
+      "A very theoretical line that leads to rich complex middlegames"
+    ]
+  },
+  {
+    "name": "Benko Gambit Accepted",
+    "eco": "A58",
+    "family": "Benko",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "c5",
+      "d5",
+      "b5",
+      "cxb5",
+      "a6",
+      "bxa6",
+      "Bxa6",
+      "Nc3",
+      "d6",
+      "e4",
+      "Bxf1"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "Black sacrifices two pawns for long-term pressure on the queenside. One of the most original positional gambits in chess - relentless queenside pressure.",
+    "ideas": [
+      "Black sacrifices a-pawn and b-pawn for permanent queenside pressure",
+      "The open a and b files give Black lasting compensation",
+      "White has extra material but can barely use it for decades",
+      "One of the most theoretically sound gambits - Black's compensation is real"
+    ]
+  },
+  {
+    "name": "Leningrad Dutch",
+    "eco": "A87",
+    "family": "Dutch",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "f5",
+      "c4",
+      "Nf6",
+      "Nf3",
+      "g6",
+      "g3",
+      "Bg7",
+      "Bg2",
+      "O-O",
+      "O-O",
+      "d6"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "Black combines the Dutch f5 with a King's Indian-style fianchetto. One of the most aggressive and dynamic defenses to 1.d4.",
+    "ideas": [
+      "Combining f5 with g6/Bg7 creates a very aggressive setup",
+      "Black attacks on the kingside while White attacks on the queenside",
+      "The ...e5 break is Black's key central counterattack",
+      "Viktor Kortchnoi and Gennady Kuzmin developed this as a real weapon"
+    ]
+  },
+  {
+    "name": "Ruy Lopez Steinitz",
+    "eco": "C62",
+    "family": "Ruy Lopez",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bb5",
+      "d6",
+      "d4",
+      "Bd7",
+      "Nc3",
+      "Nf6",
+      "O-O"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "The old Steinitz Defense - Black plays ...d6 to support e5. A solid but passive system that gives White a comfortable space advantage.",
+    "ideas": [
+      "d6 solidly supports the e5 pawn without creating weaknesses",
+      "White has a space advantage and free piece development",
+      "Black aims for slow queenside counterplay with ...Be7 and ...O-O",
+      "Rarely seen today but perfectly playable - a solid choice at club level"
+    ]
+  },
+  {
+    "name": "Sicilian Wing Gambit",
+    "eco": "B20",
+    "family": "Sicilian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c5",
+      "b4",
+      "cxb4",
+      "a3",
+      "bxa3",
+      "Nxa3",
+      "Nc6",
+      "Nf3",
+      "d6",
+      "d4"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "White sacrifices the b-pawn to disrupt Black's Sicilian setup and gain rapid center control. A surprise weapon with real practical value.",
+    "ideas": [
+      "b4 immediately challenges c5 - very rarely seen",
+      "White gets rapid center control and open files",
+      "Black should not try to hold the pawns - just develop naturally",
+      "A dangerous surprise weapon - most Sicilian players won't have prepared for this"
+    ]
+  },
+  {
+    "name": "King's Indian Petrosian",
+    "eco": "E92",
+    "family": "King's Indian",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "Bg7",
+      "e4",
+      "d6",
+      "Nf3",
+      "O-O",
+      "Be2",
+      "e5",
+      "d5"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "White closes the center immediately with d5, preventing ...exd4. Petrosian's prophylactic approach - shut down Black's counterplay before it begins.",
+    "ideas": [
+      "d5 immediately closes the center and stops Black's main counterplay",
+      "White plans the queenside minority attack and positional squeeze",
+      "Black's ...f5 is the only real counter - plans become very concrete",
+      "Tigran Petrosian invented this to limit Black's dynamic possibilities"
+    ]
+  },
+  {
+    "name": "Albin Counter-Gambit",
+    "eco": "D08",
+    "family": "Albin",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "e5",
+      "dxe5",
+      "d4",
+      "Nf3",
+      "Nc6",
+      "g3",
+      "Be6",
+      "Nbd2"
+    ],
+    "pawn": "open",
+    "move1": "d4",
+    "desc": "Black sacrifices a pawn for rapid development and a passed d-pawn. One of the oldest gambits - swashbuckling and dangerous if White is unprepared.",
+    "ideas": [
+      "e5 sacrifices a pawn for a powerful passed d4 pawn",
+      "The d4 pawn can become a monster in the middlegame",
+      "White must be careful - the d4 pawn can suddenly queen with help",
+      "Very effective as a surprise weapon against 1.d4 players"
+    ]
+  },
+  {
+    "name": "Ruy Lopez Archangel",
+    "eco": "C78",
+    "family": "Ruy Lopez",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bb5",
+      "a6",
+      "Ba4",
+      "Nf6",
+      "O-O",
+      "b5",
+      "Bb3",
+      "Bc5"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "Black plays ...Bc5 instead of ...Be7 in the Open Ruy Lopez - an aggressive bishop development. Sharp and rarely played at top level.",
+    "ideas": [
+      "Bc5 is an aggressive alternative to the quieter ...Be7",
+      "Black keeps active piece play on the kingside",
+      "The d4 break and Ng4 threats are key in Black's plans",
+      "A rare but dangerous weapon that leads to sharp uncharted positions"
+    ]
+  },
+  {
+    "name": "Slav Meran",
+    "eco": "D47",
+    "family": "Slav",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "c6",
+      "Nf3",
+      "Nf6",
+      "Nc3",
+      "e6",
+      "e3",
+      "Nbd7",
+      "Bd3",
+      "dxc4",
+      "Bxc4",
+      "b5"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "The sharpest Slav variation - Black plays ...b5 after ...dxc4, leading to complex tactical battles. One of the most theoretical lines in modern chess.",
+    "ideas": [
+      "...b5 after capturing on c4 creates immediate complications",
+      "White can play the sharp Anti-Meran (5.Ng5) or the slower 5.e3",
+      "Black gets active piece play while White has the pawn structure",
+      "One of the most theoretically complex openings - requires deep preparation"
+    ]
+  },
+  {
+    "name": "Grob Attack",
+    "eco": "A00",
+    "family": "Grob",
+    "tier": 3,
+    "moves": [
+      "g4",
+      "d5",
+      "Bg2",
+      "Bxg4",
+      "c4",
+      "c3",
+      "h3",
+      "Bd7",
+      "d4"
+    ],
+    "pawn": "hypermodern",
+    "move1": "g4",
+    "desc": "1.g4 - one of chess's wildest first moves. Ignores all opening principles. Named after Swiss master Henri Grob who actually won games with it.",
+    "ideas": [
+      "g4 immediately grabs space on the kingside at the cost of a pawn",
+      "Bg2 and c4 build a hypermodern setup behind the advanced g-pawn",
+      "White's play is so unusual that opponents often don't know how to react",
+      "GM Michael Basman has championed this as a serious weapon"
+    ]
+  },
+  {
+    "name": "Coca-Cola Opening",
+    "eco": "C20",
+    "family": "Coca-Cola",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "e5",
+      "Qh5",
+      "Nc6",
+      "Bc4",
+      "g6",
+      "Qf3",
+      "Nf6",
+      "Qb3"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White attacks f7 immediately with Qh5. Extremely aggressive but easily refuted at master level - a shock weapon against unprepared players.",
+    "ideas": [
+      "Qh5 immediately threatens Qxf7#, forcing Black to react",
+      "Sometimes called the 'Scholar's Mate' cousin - same idea, different move order",
+      "Easily met with ...Nc6 and careful play by Black",
+      "A dangerous weapon at club level where the threat is often not seen"
+    ]
+  },
+  {
+    "name": "Tennison Gambit",
+    "eco": "A06",
+    "family": "Tennison",
+    "tier": 3,
+    "moves": [
+      "Nf3",
+      "d5",
+      "e4",
+      "dxe4",
+      "Ng5",
+      "Nf6",
+      "d3",
+      "exd3",
+      "Bxd3"
+    ],
+    "pawn": "semi-open",
+    "move1": "Nf3",
+    "desc": "White sacrifices a pawn to activate pieces rapidly. The gambit went viral on social media - a surprise weapon with real venom.",
+    "ideas": [
+      "White sacrifices e4 to accelerate development dramatically",
+      "The knight on g5 targets f7 while d3 recaptures with tempo",
+      "Became famous on YouTube and Chess.com for its attacking potential",
+      "Black must know the refutation - otherwise White's attack is ferocious"
+    ]
+  },
+  {
+    "name": "Fried Liver Attack",
+    "eco": "C57",
+    "family": "Italian",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Nf6",
+      "Ng5",
+      "d5",
+      "exd5",
+      "Nxd5",
+      "Nxf7"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White sacrifices the knight on f7 for a devastating attack on the king. One of the most aggressive gambits in all of chess theory.",
+    "ideas": [
+      "Nxf7 is a shocking sacrifice that blows open the king's defense",
+      "After Kxf7, White plays Qf3+ and then Nxd5 winning material",
+      "One of the most feared attacks at club and amateur level",
+      "Black's king is permanently exposed after accepting the sacrifice"
+    ]
+  },
+  {
+    "name": "Halloween Gambit",
+    "eco": "C47",
+    "family": "Four Knights",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Nc3",
+      "Nf6",
+      "Nxe5",
+      "Nxe5",
+      "d4",
+      "Nc6",
+      "d5"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White sacrifices a whole knight on move 4 for two pawns and a ferocious attack. Named for its 'scary' nature - pure chaos on the board.",
+    "ideas": [
+      "White sacrifices a knight on move 4 for two pawns and initiative",
+      "The center becomes massive and Black's knights are driven back",
+      "Extremely hard to face without specific preparation",
+      "Refuted at top level but terrifying for unprepared opponents"
+    ]
+  },
+  {
+    "name": "From's Gambit",
+    "eco": "A02",
+    "family": "Bird's",
+    "tier": 3,
+    "moves": [
+      "f4",
+      "e5",
+      "fxe5",
+      "d6",
+      "exd6",
+      "Bxd6",
+      "Nf3",
+      "g5",
+      "g3",
+      "g4"
+    ],
+    "pawn": "semi-open",
+    "move1": "f4",
+    "desc": "Black counters Bird's Opening with an immediate e5 counter-gambit. Wild complications follow - a tactical brawl from move one.",
+    "ideas": [
+      "Black immediately challenges Bird's Opening with the e5 gambit",
+      "After dxc6, Black gets the d6 bishop as compensation",
+      "White's king often gets caught in the center after g5",
+      "Very dangerous for unprepared Bird's Opening players"
+    ]
+  },
+  {
+    "name": "Elephant Gambit",
+    "eco": "C40",
+    "family": "Elephant",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "d5",
+      "exd5",
+      "e4",
+      "Qe2",
+      "Nf6",
+      "d3",
+      "exd3"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "Black counter-gambits immediately with d5. A little-known and unsound but dangerous surprise weapon - White often walks into traps.",
+    "ideas": [
+      "...d5 is Black's counter-gambit to equalize immediately",
+      "After exd5, ...e4 creates a dangerous pawn advance",
+      "White must play precisely - natural moves can lead to disaster",
+      "Named for its lumbering, aggressive nature"
+    ]
+  },
+  {
+    "name": "Hippo Defense",
+    "eco": "B00",
+    "family": "Hippo",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "g6",
+      "d4",
+      "b6",
+      "Nc3",
+      "Bb7",
+      "Nf3",
+      "d6",
+      "Be3",
+      "Nd7"
+    ],
+    "pawn": "closed",
+    "move1": "e4",
+    "desc": "Black develops all pieces behind a wall of pawns before committing. Named for the hippopotamus - slow, lurking, and ready to strike.",
+    "ideas": [
+      "Black develops all minor pieces to the second rank before advancing",
+      "Refuses to commit to any pawn breaks until the position is fully set up",
+      "White often overextends trying to 'punish' the passive setup",
+      "GM John Emms has advocated this mysterious, unorthodox system"
+    ]
+  },
+  {
+    "name": "Muzio Gambit",
+    "eco": "C37",
+    "family": "King's Gambit",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "e5",
+      "f4",
+      "exf4",
+      "Nf3",
+      "g5",
+      "Bc4",
+      "g4",
+      "O-O",
+      "gxf3",
+      "Qxf3"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White sacrifices a knight on move 5 for a murderous attack. One of the most romantic gambits from the Romantic era of chess.",
+    "ideas": [
+      "White sacrifices the Nf3 to accelerate the attack at all costs",
+      "The open f-file and exposed Black king give tremendous compensation",
+      "A true Romantic gambit - attack at any material cost",
+      "Was a standard weapon in 19th century chess before defensive theory improved"
+    ]
+  },
+  {
+    "name": "Spike Opening",
+    "eco": "A00",
+    "family": "Spike",
+    "tier": 3,
+    "moves": [
+      "g4",
+      "d5",
+      "h3",
+      "e5",
+      "d3",
+      "Nf6",
+      "Bg2",
+      "Bc5",
+      "Nc3"
+    ],
+    "pawn": "hypermodern",
+    "move1": "g4",
+    "desc": "A variant of the Grob with a slower setup. White builds a bizarre but coherent structure - a true anti-theory nightmare.",
+    "ideas": [
+      "Like the Grob but with a slower, more solid setup",
+      "h3 prevents ...Bxg4 giving the bishop for a pawn",
+      "The Bg2 controls the long diagonal while White waits",
+      "Almost no theory exists - both sides are truly on their own"
+    ]
+  },
+  {
+    "name": "King's Pawn Game",
+    "eco": "C20",
+    "family": "Open Game",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "d6",
+      "d4",
+      "Nf6",
+      "dxe5",
+      "Nxe4",
+      "Bd3"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "The classic open game - both sides control the center with pawns. The foundation of chess theory for over 200 years.",
+    "ideas": [
+      "Both sides immediately fight for the center with pawns",
+      "Open games tend to lead to tactical, sharp positions",
+      "Nf3 is White's most flexible second move",
+      "The starting point for dozens of major openings"
+    ]
+  },
+  {
+    "name": "Wayward Queen Attack",
+    "eco": "C20",
+    "family": "Wayward Queen",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Qh5",
+      "Nc6",
+      "d3",
+      "Nf6",
+      "Qg5",
+      "d6",
+      "Nc3"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White brings the queen out early to h5, threatening f7. A beginner trap - easily punished by experienced players but dangerous for novices.",
+    "ideas": [
+      "Qh5 threatens a quick checkmate on f7",
+      "Black must play ...Nc6 and ...Nf6 to drive the queen away",
+      "After ...g6, White retreats and has wasted time",
+      "Teaches beginners why bringing the queen out early is risky"
+    ]
+  },
+  {
+    "name": "Scandinavian Defense 2...Qxd5",
+    "eco": "B01",
+    "family": "Scandinavian",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "d5",
+      "exd5",
+      "Qxd5",
+      "Nc3",
+      "Qa5",
+      "d4",
+      "Nf6",
+      "Nf3"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black immediately recaptures with the queen - the classical Scandinavian. Slightly awkward but very solid and principled.",
+    "ideas": [
+      "Black recaptures immediately with the queen to regain the pawn",
+      "The queen on a5 or d6 is Black's key piece in this system",
+      "White gains a tempo with Nc3 attacking the queen",
+      "A solid, concrete system with few weaknesses"
+    ]
+  },
+  {
+    "name": "Center Game",
+    "eco": "C22",
+    "family": "Center Game",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "d4",
+      "exd4",
+      "Qxd4",
+      "Nc6",
+      "Qe3",
+      "Nf6",
+      "Nc3"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White opens the center immediately on move 2. The queen is exposed but the position opens dramatically.",
+    "ideas": [
+      "d4 immediately opens the center before pieces are developed",
+      "The queen recapture on d4 is awkward - easily attacked by ...Nc6",
+      "White's early center control must be justified by active play",
+      "A historical curiosity - rarely seen at serious level today"
+    ]
+  },
+  {
+    "name": "Ruy Lopez Morphy Defense",
+    "eco": "C78",
+    "family": "Ruy Lopez",
+    "tier": 1,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bb5",
+      "a6",
+      "Ba4",
+      "Nf6",
+      "O-O",
+      "b5",
+      "Bb3"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "Black plays ...a6 and ...b5 to push the bishop back. The Morphy Defense is the most popular and theoretically rich Ruy Lopez line.",
+    "ideas": [
+      "...a6 questions the bishop and ...b5 kicks it back to b3",
+      "The Bb3 is actually well-placed targeting d5 and f7",
+      "This is the 'mainline' Ruy Lopez played at the highest level",
+      "Paul Morphy refined this system in the 1850s"
+    ]
+  },
+  {
+    "name": "Sicilian Accelerated Dragon",
+    "eco": "B34",
+    "family": "Sicilian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "Nc6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "g6",
+      "Nc3",
+      "Bg7",
+      "Be3"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black fianchettoes immediately without ...d6. This avoids the Yugoslav Attack and leads to cleaner Dragon-like positions.",
+    "ideas": [
+      "Black avoids the Yugoslav Attack by skipping ...d6",
+      "The g7 bishop and ...d5 break are Black's main weapons",
+      "Nxd4 is played before Black commits to d6",
+      "The Maroczy Bind (c4) is White's main anti-Dragon system"
+    ]
+  },
+  {
+    "name": "French Poisoned Pawn",
+    "eco": "C18",
+    "family": "French",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "e6",
+      "d4",
+      "d5",
+      "Nc3",
+      "Bb4",
+      "e5",
+      "c5",
+      "a3",
+      "Bxc3",
+      "bxc3",
+      "Qc7",
+      "Qg4"
+    ],
+    "pawn": "closed",
+    "move1": "e4",
+    "desc": "White offers the g7 pawn - a 'poisoned' pawn. If Black takes, a wild tactical battle ensues. Played by Fischer and Tal.",
+    "ideas": [
+      "Qg4 offers the g2 pawn as poison - taking is dangerous",
+      "If Black takes on g2, the rook is trapped after Rg1",
+      "Both sides must know deep theory to navigate this minefield",
+      "One of the most explosive lines in the French Defense"
+    ]
+  },
+  {
+    "name": "King's Indian Four Pawns Attack",
+    "eco": "E76",
+    "family": "King's Indian",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "Bg7",
+      "e4",
+      "d6",
+      "f4",
+      "O-O",
+      "Nf3"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "White builds a massive four-pawn center. An ambitious attempt to dominate before Black can counterattack.",
+    "ideas": [
+      "White occupies e4, d4, c4, and f4 - a massive pawn wall",
+      "The center is powerful but can become a target for Black",
+      "Black must counterattack immediately with ...c5 or ...e5",
+      "A sharp, committal approach requiring precise defensive play from Black"
+    ]
+  },
+  {
+    "name": "Benko Gambit Declined",
+    "eco": "A57",
+    "family": "Benko",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "c5",
+      "d5",
+      "b5",
+      "Nf3",
+      "g6",
+      "cxb5",
+      "a6",
+      "e3"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "White declines the Benko Gambit, keeping a solid structure. Less committal than accepting, but Black still gets queenside play.",
+    "ideas": [
+      "White declines the gambit to avoid complex queenside counterplay",
+      "Black still gets queenside pressure with ...a6 and ...g6",
+      "The resulting positions are less sharp than the accepted gambit",
+      "A flexible choice - White avoids most of the theory"
+    ]
+  },
+  {
+    "name": "Caro-Kann Advance",
+    "eco": "B12",
+    "family": "Caro-Kann",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c6",
+      "d4",
+      "d5",
+      "e5",
+      "Bf5",
+      "Nf3",
+      "e6",
+      "Be2",
+      "Nd7",
+      "O-O"
+    ],
+    "pawn": "closed",
+    "move1": "e4",
+    "desc": "White advances with e5 - the Advance Variation. A popular modern system that avoids the classical Caro-Kann theory.",
+    "ideas": [
+      "e5 gains space and avoids the exchange/classical Caro-Kann",
+      "Black's bishop on f5 is well-placed and hard to challenge",
+      "The position is solid for Black - White must be patient",
+      "Became very popular after Sveshnikov's contributions"
+    ]
+  },
+  {
+    "name": "Sicilian Chekhover",
+    "eco": "B53",
+    "family": "Sicilian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "d6",
+      "d4",
+      "cxd4",
+      "Qxd4",
+      "Nc6",
+      "Bb5",
+      "Bd7",
+      "Bxc6"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "White recaptures with the queen - the Chekhover Variation. Unusual but tricky, aiming for rapid queenside pressure.",
+    "ideas": [
+      "Qxd4 is an unusual recapture that avoids main Sicilian lines",
+      "Bb5 immediately pins the knight and threatens structural damage",
+      "After Bxc6, White has the bishop pair and a solid position",
+      "A tricky anti-Sicilian sideline with some sting"
+    ]
+  },
+  {
+    "name": "London System Anti-KID",
+    "eco": "A48",
+    "family": "London",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "Nf6",
+      "Nf3",
+      "g6",
+      "Bf4",
+      "Bg7",
+      "e3",
+      "O-O",
+      "Be2",
+      "d6",
+      "O-O"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "The London System against the King's Indian fianchetto setup. White builds the same solid structure regardless of Black's response.",
+    "ideas": [
+      "London's setup is completely independent of Black's choices",
+      "Against the KID fianchetto, White simply continues development",
+      "The Bf4 is placed before e3 - a key move order detail",
+      "Leads to solid, maneuvering positions that suit London players"
+    ]
+  },
+  {
+    "name": "Alekhine Defense Modern",
+    "eco": "B04",
+    "family": "Alekhine",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "Nf6",
+      "e5",
+      "Nd5",
+      "d4",
+      "d6",
+      "Nf3",
+      "Bg4",
+      "Be2",
+      "e6",
+      "O-O"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "The modern variation - Black retreats the knight to d5 and plays a solid setup. More restrained than the Four Pawns Attack variation.",
+    "ideas": [
+      "Nd5 retreats the knight but takes aim at e3 and f4 squares",
+      "...Bg4 pins the knight and creates tension",
+      "Black's plan involves ...dxe5 to open the position",
+      "More solid than the Four Pawns Attack variation for White"
+    ]
+  },
+  {
+    "name": "Dutch Leningrad",
+    "eco": "A87",
+    "family": "Dutch",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "f5",
+      "c4",
+      "Nf6",
+      "Nf3",
+      "g6",
+      "g3",
+      "Bg7",
+      "Bg2",
+      "O-O",
+      "O-O"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "Black combines f5 with g6 and Bg7. A dynamic and modern Dutch - the Leningrad School's aggressive interpretation.",
+    "ideas": [
+      "The combination of f5 and g6/Bg7 gives Black a very active setup",
+      "Black's f5 controls e4 while the bishop targets d4",
+      "Geller and Bronstein developed this system in the Soviet era",
+      "The resulting positions are rich and double-edged"
+    ]
+  },
+  {
+    "name": "Trompowsky Attack main",
+    "eco": "A45",
+    "family": "Trompowsky",
+    "tier": 2,
+    "moves": [
+      "d4",
+      "Nf6",
+      "Bg5",
+      "Ne4",
+      "Bf4",
+      "d5",
+      "e3",
+      "c5",
+      "Bd3",
+      "Nc6",
+      "c3"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "White pins the knight on f6 with Bg5 - avoiding all Indian Defense theory. A popular anti-theory weapon at every level.",
+    "ideas": [
+      "Bg5 avoids all Indian Defense theory after 1.d4 Nf6",
+      "After ...Ne4, White must decide where to put the bishop",
+      "Julian Hodgson popularized this at grandmaster level",
+      "Very practical - White sets the agenda from move 2"
+    ]
+  },
+  {
+    "name": "Jerome Gambit",
+    "eco": "C50",
+    "family": "Italian",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Bc5",
+      "Bxf7",
+      "Kxf7",
+      "Nxe5",
+      "Nxe5",
+      "Qh5"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White sacrifices two pieces for a wild attack. Completely unsound at master level but incredibly dangerous for unprepared players.",
+    "ideas": [
+      "Two piece sacrifices on f7 create a shocking attack",
+      "After Kxf7 and Nxe5, White has Qh5+ creating real threats",
+      "Completely refuted at master level but a brilliant beginner trap",
+      "Named after Alonzo Wheeler Jerome who played it in the 1870s"
+    ]
+  },
+  {
+    "name": "Fool's Mate",
+    "eco": "B00",
+    "family": "Fool's Mate",
+    "tier": 3,
+    "moves": [
+      "f3",
+      "e5",
+      "g4",
+      "Qh4"
+    ],
+    "pawn": "open",
+    "move1": "f3",
+    "desc": "The fastest possible checkmate - 2 moves for Black! White's reckless pawn advances expose the king fatally.",
+    "ideas": [
+      "The fastest possible checkmate - achieved in only 2 moves",
+      "White's f3 and g4 open the h4-e1 diagonal fatally",
+      "Qh4# is checkmate - the king has no escape and can't block",
+      "The only 'opening' that ends the game before most pieces move"
+    ]
+  },
+  {
+    "name": "Creepy Crawly Formation",
+    "eco": "A00",
+    "family": "Creepy Crawly",
+    "tier": 3,
+    "moves": [
+      "a3",
+      "e5",
+      "h3",
+      "d5",
+      "a4",
+      "Nf6",
+      "h4",
+      "c6",
+      "Ra3"
+    ],
+    "pawn": "hypermodern",
+    "move1": "a3",
+    "desc": "White plays only rook pawns - a total provocation. Both rook pawns advance while pieces wait. An extreme experiment in passive play.",
+    "ideas": [
+      "White plays only rook pawns - a total provocation of all chess principles",
+      "After a3/h3/a4/h4, the rooks come out along the third rank",
+      "An experimental system more art project than opening theory",
+      "Played occasionally to confuse opponents completely"
+    ]
+  },
+  {
+    "name": "Santasiere's Folly",
+    "eco": "A00",
+    "family": "Santasiere",
+    "tier": 3,
+    "moves": [
+      "Nf3",
+      "d5",
+      "b4",
+      "Nf6",
+      "Bb2",
+      "g6",
+      "b5",
+      "Bg7",
+      "e3"
+    ],
+    "pawn": "hypermodern",
+    "move1": "Nf3",
+    "desc": "White plays an early b4 - a 'folly' according to most authorities. Named for American master Anthony Santasiere who genuinely believed in it.",
+    "ideas": [
+      "b4 follows Nf3 in a strange opening that grabs queenside space",
+      "The setup resembles the Polish but with Nf3 inserted",
+      "Anthony Santasiere believed this was theoretically sound",
+      "A rare curiosity that names a real player's eccentric idea"
+    ]
+  },
+  {
+    "name": "Vulture Defense",
+    "eco": "A41",
+    "family": "Vulture",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "c5",
+      "d5",
+      "Nf6",
+      "c4",
+      "Ne4",
+      "Qd3",
+      "Qa5",
+      "Nd2",
+      "Nxd2"
+    ],
+    "pawn": "semi-closed",
+    "move1": "d4",
+    "desc": "Black swings the knight to e4 after the Benoni setup. An unusual counterplay idea that creates immediate tactical complications.",
+    "ideas": [
+      "...Ne4 is the defining move - attacking d2 and creating immediate threats",
+      "Black aims to disrupt White's Benoni setup with knight activity",
+      "The Qa5 and Ne4 combination can be difficult to handle",
+      "A sharp, little-known system with real tactical bite"
+    ]
+  },
+  {
+    "name": "Sokolsky Opening",
+    "eco": "A00",
+    "family": "Sokolsky",
+    "tier": 3,
+    "moves": [
+      "b4",
+      "e5",
+      "Bb2",
+      "f6",
+      "b5",
+      "d5",
+      "e3",
+      "Be6",
+      "Nf3",
+      "Nd7"
+    ],
+    "pawn": "hypermodern",
+    "move1": "b4",
+    "desc": "The Polish Opening - 1.b4. White immediately grabs queenside space. Anatoly Sokolsky developed it as a complete system.",
+    "ideas": [
+      "b4 grabs immediate queenside space and controls c5",
+      "Bb2 develops naturally targeting the long diagonal",
+      "Black must decide how to react to this unusual approach",
+      "Sokolsky wrote a whole book on this system in the 1960s"
+    ]
+  },
+  {
+    "name": "Bucker Defense",
+    "eco": "B00",
+    "family": "Bucker",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "d6",
+      "d4",
+      "f5",
+      "exf5",
+      "Bxf5",
+      "Nf3",
+      "e6",
+      "Nc3",
+      "Nf6"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "Black immediately counters e4 with d6 and f5 - a Dutch-style setup against 1.e4. Unusual but the f5 advance provides instant counterplay.",
+    "ideas": [
+      "...f5 creates an early Dutch setup against 1.e4",
+      "The f5 pawn advance creates kingside space and activity",
+      "White can win the f5 pawn immediately but Black gets activity",
+      "A rare surprise weapon that puts White in unusual territory"
+    ]
+  },
+  {
+    "name": "Pterodactyl Defense",
+    "eco": "A41",
+    "family": "Pterodactyl",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "g6",
+      "d4",
+      "Bg7",
+      "c4",
+      "d6",
+      "Nc3",
+      "c5",
+      "Nf3",
+      "Qa5"
+    ],
+    "pawn": "semi-closed",
+    "move1": "e4",
+    "desc": "Black combines the Modern Defense with ...c5 and ...Qa5 - a sweeping 'prehistoric' attack. Wild and aggressive.",
+    "ideas": [
+      "Black combines the Modern Defense setup with early ...Qa5",
+      "The queen on a5 creates immediate pressure and tactical threats",
+      "White must be careful about the exposed queen's attack",
+      "Named for its 'prehistoric' aggression - flying through the air"
+    ]
+  },
+  {
+    "name": "Hammerschlag Opening",
+    "eco": "A00",
+    "family": "Hammerschlag",
+    "tier": 3,
+    "moves": [
+      "f3",
+      "e5",
+      "Kf2",
+      "d5",
+      "d4",
+      "exd4",
+      "Qxd4",
+      "Nc6",
+      "Qe3"
+    ],
+    "pawn": "open",
+    "move1": "f3",
+    "desc": "White plays f3 followed by Kf2 - voluntarily moving the king before castling. Also called the 'Bongcloud' precursor. Bizarre beyond all reason.",
+    "ideas": [
+      "f3 is already dubious - Kf2 then voluntarily exposes the king",
+      "White gives up castling rights permanently on move 2",
+      "Almost never played seriously - an extreme shock weapon",
+      "Related to the Bongcloud - extreme king marches from the very start"
+    ]
+  },
+  {
+    "name": "Bongcloud Attack",
+    "eco": "C20",
+    "family": "Bongcloud",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "e5",
+      "Ke2",
+      "Ke7",
+      "Ke1",
+      "Ke8",
+      "Ke2"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White plays Ke2 on move 2 - the legendary Bongcloud. Famously played by Magnus Carlsen and Hikaru Nakamura in serious games.",
+    "ideas": [
+      "Ke2 voluntarily walks the king into the center on move 2",
+      "White gives up castling rights immediately",
+      "Magnus Carlsen played this against Nakamura - they both laughed",
+      "The Bongcloud has become a cultural icon of modern chess"
+    ]
+  },
+  {
+    "name": "Closed Sicilian",
+    "eco": "B23",
+    "family": "Sicilian",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "c5",
+      "Nc3",
+      "Nc6",
+      "g3",
+      "g6",
+      "Bg2",
+      "Bg7",
+      "d3",
+      "d6",
+      "Be3"
+    ],
+    "pawn": "semi-open",
+    "move1": "e4",
+    "desc": "White avoids the Open Sicilian with a kingside fianchetto. A solid, maneuvering system that sidesteps most Sicilian theory.",
+    "ideas": [
+      "White avoids the main Sicilian lines entirely",
+      "The g3/Bg2 setup is solid and flexible",
+      "White plans f4-f5 kingside attack in the middlegame",
+      "Very popular at club level - easy to learn and use"
+    ]
+  },
+  {
+    "name": "Scotch Gambit",
+    "eco": "C44",
+    "family": "Scotch",
+    "tier": 2,
+    "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "d4",
+      "exd4",
+      "Bc4",
+      "Nf6",
+      "e5",
+      "d5",
+      "Bb3"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "White gives up the center pawn to keep initiative. Less theoretical than the main Scotch but very practical and dangerous.",
+    "ideas": [
+      "Bc4 instead of Nxd4 maintains attacking momentum",
+      "After ...Nf6 and e5, White gains kingside space",
+      "The attack on f7 and e5 creates lasting pressure",
+      "A practical alternative to the main Scotch Game lines"
+    ]
+  },
+  {
+    "name": "Icelandic Gambit",
+    "eco": "B01",
+    "family": "Scandinavian",
+    "tier": 3,
+    "moves": [
+      "e4",
+      "d5",
+      "exd5",
+      "Nf6",
+      "c4",
+      "e6",
+      "dxe6",
+      "Bxe6",
+      "Nf3",
+      "Nc6",
+      "Be2"
+    ],
+    "pawn": "open",
+    "move1": "e4",
+    "desc": "Black sacrifices a pawn in the Scandinavian for rapid development. A wild Scandinavian gambit that creates immediate complications.",
+    "ideas": [
+      "Black declines to recapture on d5, instead playing ...e6",
+      "After exd6 Bxe6, Black has rapid development as compensation",
+      "The attack on d4 and active pieces give Black real counterplay",
+      "A surprise weapon - most players expect the classical Scandinavian"
+    ]
+  },
+  {
+    "name": "Budapest Gambit Declined",
+    "eco": "A52",
+    "family": "Budapest",
+    "tier": 3,
+    "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e5",
+      "d5",
+      "Bc5",
+      "Bg5",
+      "h6",
+      "Bxf6",
+      "Qxf6",
+      "e3"
+    ],
+    "pawn": "closed",
+    "move1": "d4",
+    "desc": "White declines the Budapest with d5, sideStepping the gambit complications. Black gets active piece play but no immediate material advantage.",
+    "ideas": [
+      "d5 declines the Budapest gambit and grabs central space",
+      "Black's bishop on c5 is active but the center is closed",
+      "Bg5 pins the knight and simplifies the position",
+      "White has a solid edge without entering gambit complications"
+    ]
+  },
+  {
+    "name": "Reti Gambit",
+    "eco": "A09",
+    "family": "Reti",
+    "tier": 2,
+    "moves": [
+      "Nf3",
+      "d5",
+      "c4",
+      "dxc4",
+      "e3",
+      "Nf6",
+      "Bxc4",
+      "e6",
+      "O-O",
+      "c5",
+      "d4"
+    ],
+    "pawn": "semi-closed",
+    "move1": "Nf3",
+    "desc": "White sacrifices the c4 pawn in the Reti for quick development. A hypermodern gambit with Catalan-style pressure.",
+    "ideas": [
+      "White accepts the gambit pawn being taken in exchange for rapid development",
+      "The resulting positions resemble the Catalan Opening",
+      "Bxc4 regains the pawn while developing with tempo",
+      "A practical gambit that avoids heavy Reti theory"
+    ]
+  }
+]

@@ -1,0 +1,1703 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opendle · Dev Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0a0908;
+        --surface: #131110;
+        --surface2: #1c1a17;
+        --surface3: #252220;
+        --border: #2a2720;
+        --border2: #3a3630;
+        --gold: #d4a853;
+        --gold-dim: #8a6930;
+        --gold-bg: #1a1608;
+        --cream: #f0e6d0;
+        --cream-dim: #9a8f7a;
+        --cream-faint: #4a4540;
+        --green: #4a7c59;
+        --green-bg: #0e1f15;
+        --green-bright: #5eb872;
+        --yellow: #c49820;
+        --yellow-bg: #1a1405;
+        --yellow-bright: #e0b830;
+        --red: #8b3a3a;
+        --red-bg: #180b0b;
+        --red-bright: #c05050;
+        --blue: #3a6a9a;
+        --blue-bg: #0b1622;
+        --blue-bright: #5a9ad0;
+        --purple: #6a3a9a;
+        --purple-bg: #140b22;
+        --sidebar: 220px;
+        --radius: 6px;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: var(--bg);
+        color: var(--cream);
+        font-family: "DM Sans", sans-serif;
+        display: flex;
+        min-height: 100vh;
+      }
+
+      /* ─── SIDEBAR ──────────────────────────────────────────────────────── */
+      #sidebar {
+        width: var(--sidebar);
+        flex-shrink: 0;
+        background: var(--surface);
+        border-right: 1px solid var(--border);
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+      }
+      .sidebar-logo {
+        padding: 22px 18px 16px;
+        border-bottom: 1px solid var(--border);
+      }
+      .sidebar-logo .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.35rem;
+        font-weight: 900;
+        color: var(--gold);
+        letter-spacing: -0.5px;
+      }
+      .sidebar-logo .logo em {
+        color: var(--cream);
+        font-style: normal;
+      }
+      .sidebar-logo .badge {
+        font-family: "DM Mono", monospace;
+        font-size: 0.5rem;
+        color: var(--cream-dim);
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-top: 4px;
+      }
+      nav {
+        flex: 1;
+        padding: 12px 0;
+        overflow-y: auto;
+      }
+      .nav-group {
+        margin-bottom: 4px;
+      }
+      .nav-label {
+        font-family: "DM Mono", monospace;
+        font-size: 0.45rem;
+        color: var(--gold-dim);
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        padding: 10px 18px 4px;
+      }
+      .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 9px 18px;
+        cursor: pointer;
+        font-size: 0.82rem;
+        color: var(--cream-dim);
+        transition:
+          background 0.12s,
+          color 0.12s;
+        border-left: 2px solid transparent;
+      }
+      .nav-item:hover {
+        background: var(--surface2);
+        color: var(--cream);
+      }
+      .nav-item.active {
+        background: var(--gold-bg);
+        color: var(--gold);
+        border-left-color: var(--gold);
+      }
+      .nav-icon {
+        font-size: 0.85rem;
+        width: 16px;
+        text-align: center;
+      }
+      .sidebar-footer {
+        padding: 14px 18px;
+        border-top: 1px solid var(--border);
+        font-family: "DM Mono", monospace;
+        font-size: 0.55rem;
+        color: var(--cream-faint);
+      }
+      .auth-status {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 10px;
+      }
+      .auth-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--red-bright);
+        transition: background 0.3s;
+      }
+      .auth-dot.ok {
+        background: var(--green-bright);
+      }
+      #key-input {
+        width: 100%;
+        background: var(--surface2);
+        border: 1px solid var(--border2);
+        color: var(--cream);
+        font-family: "DM Mono", monospace;
+        font-size: 0.65rem;
+        padding: 6px 8px;
+        border-radius: 4px;
+        outline: none;
+        margin-bottom: 6px;
+      }
+      #key-input:focus {
+        border-color: var(--gold-dim);
+      }
+      #auth-btn {
+        width: 100%;
+        background: var(--gold-dim);
+        color: var(--bg);
+        font-family: "DM Mono", monospace;
+        font-size: 0.6rem;
+        font-weight: 500;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        letter-spacing: 0.06em;
+      }
+      #auth-btn:hover {
+        background: var(--gold);
+      }
+
+      /* ─── MAIN CONTENT ─────────────────────────────────────────────────── */
+      #main {
+        margin-left: var(--sidebar);
+        flex: 1;
+        padding: 28px;
+        overflow-y: auto;
+        min-height: 100vh;
+      }
+      .page {
+        display: none;
+      }
+      .page.active {
+        display: block;
+      }
+
+      /* ─── TOP BAR ──────────────────────────────────────────────────────── */
+      .page-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 28px;
+        gap: 16px;
+      }
+      .page-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--cream);
+        line-height: 1.1;
+      }
+      .page-sub {
+        font-family: "DM Mono", monospace;
+        font-size: 0.6rem;
+        color: var(--cream-dim);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-top: 5px;
+      }
+
+      /* ─── STAT CARDS ───────────────────────────────────────────────────── */
+      .stat-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 12px;
+        margin-bottom: 28px;
+      }
+      .stat-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 18px;
+        position: relative;
+        overflow: hidden;
+      }
+      .stat-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: var(--gold-dim);
+      }
+      .stat-card.green::before {
+        background: var(--green);
+      }
+      .stat-card.blue::before {
+        background: var(--blue);
+      }
+      .stat-card.yellow::before {
+        background: var(--yellow);
+      }
+      .stat-card.purple::before {
+        background: var(--purple);
+      }
+      .stat-val {
+        font-family: "DM Mono", monospace;
+        font-size: 2rem;
+        color: var(--cream);
+        line-height: 1;
+        margin-bottom: 6px;
+      }
+      .stat-lbl {
+        font-family: "DM Mono", monospace;
+        font-size: 0.52rem;
+        color: var(--cream-dim);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .stat-trend {
+        font-family: "DM Mono", monospace;
+        font-size: 0.62rem;
+        color: var(--green-bright);
+        margin-top: 4px;
+      }
+
+      /* ─── SECTIONS / CARDS ─────────────────────────────────────────────── */
+      .section {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        margin-bottom: 20px;
+        overflow: hidden;
+      }
+      .section-head {
+        padding: 14px 18px;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .section-title {
+        font-family: "DM Mono", monospace;
+        font-size: 0.7rem;
+        color: var(--gold);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .section-body {
+        padding: 18px;
+      }
+
+      /* ─── TABLES ───────────────────────────────────────────────────────── */
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.82rem;
+      }
+      .data-table th {
+        font-family: "DM Mono", monospace;
+        font-size: 0.5rem;
+        color: var(--cream-dim);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-align: left;
+        padding: 8px 12px;
+        border-bottom: 1px solid var(--border);
+      }
+      .data-table td {
+        padding: 9px 12px;
+        border-bottom: 1px solid var(--border);
+        color: var(--cream-dim);
+        vertical-align: middle;
+      }
+      .data-table tr:last-child td {
+        border-bottom: none;
+      }
+      .data-table tr:hover td {
+        background: var(--surface2);
+      }
+      .data-table td:first-child {
+        color: var(--cream);
+      }
+
+      /* ─── BADGES ───────────────────────────────────────────────────────── */
+      .badge {
+        font-family: "DM Mono", monospace;
+        font-size: 0.55rem;
+        padding: 3px 7px;
+        border-radius: 20px;
+        letter-spacing: 0.05em;
+        display: inline-block;
+      }
+      .badge.beg {
+        background: var(--green-bg);
+        border: 1px solid var(--green);
+        color: var(--green-bright);
+      }
+      .badge.int {
+        background: var(--yellow-bg);
+        border: 1px solid var(--yellow);
+        color: var(--yellow-bright);
+      }
+      .badge.mas {
+        background: var(--purple-bg);
+        border: 1px solid var(--purple);
+        color: #9a6ad0;
+      }
+      .badge.auto {
+        background: var(--surface3);
+        border: 1px solid var(--border2);
+        color: var(--cream-dim);
+      }
+      .badge.manual {
+        background: var(--gold-bg);
+        border: 1px solid var(--gold-dim);
+        color: var(--gold);
+      }
+
+      /* ─── MINI BAR CHART ───────────────────────────────────────────────── */
+      .mini-bar-wrap {
+        display: flex;
+        align-items: flex-end;
+        gap: 3px;
+        height: 60px;
+        padding-top: 4px;
+      }
+      .mini-bar {
+        flex: 1;
+        background: var(--gold-dim);
+        border-radius: 2px 2px 0 0;
+        min-height: 2px;
+        transition: height 0.4s ease;
+        position: relative;
+      }
+      .mini-bar:hover .mini-bar-tip {
+        display: block;
+      }
+      .mini-bar-tip {
+        display: none;
+        position: absolute;
+        bottom: calc(100% + 4px);
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--surface3);
+        border: 1px solid var(--border2);
+        border-radius: 3px;
+        font-family: "DM Mono", monospace;
+        font-size: 0.55rem;
+        color: var(--cream);
+        padding: 3px 6px;
+        white-space: nowrap;
+        z-index: 10;
+      }
+      .bar-labels {
+        display: flex;
+        gap: 3px;
+        margin-top: 3px;
+      }
+      .bar-label {
+        flex: 1;
+        font-family: "DM Mono", monospace;
+        font-size: 0.5rem;
+        color: var(--cream-faint);
+        text-align: center;
+      }
+
+      /* ─── BUTTONS ──────────────────────────────────────────────────────── */
+      .btn {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 8px 14px;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        transition: all 0.15s;
+      }
+      .btn-gold {
+        background: var(--gold);
+        color: var(--bg);
+      }
+      .btn-gold:hover {
+        background: #c49840;
+      }
+      .btn-ghost {
+        background: none;
+        border: 1px solid var(--border2);
+        color: var(--cream-dim);
+      }
+      .btn-ghost:hover {
+        border-color: var(--gold-dim);
+        color: var(--gold);
+      }
+      .btn-red {
+        background: var(--red-bg);
+        border: 1px solid var(--red);
+        color: var(--red-bright);
+      }
+      .btn-red:hover {
+        border-color: var(--red-bright);
+      }
+      .btn-sm {
+        padding: 5px 10px;
+        font-size: 0.72rem;
+      }
+
+      /* ─── FORMS ────────────────────────────────────────────────────────── */
+      .form-row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        margin-bottom: 14px;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        flex: 1;
+        min-width: 140px;
+      }
+      .form-label {
+        font-family: "DM Mono", monospace;
+        font-size: 0.55rem;
+        color: var(--gold-dim);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .form-input,
+      .form-select {
+        background: var(--surface2);
+        border: 1px solid var(--border2);
+        color: var(--cream);
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.85rem;
+        padding: 8px 10px;
+        border-radius: 4px;
+        outline: none;
+        transition: border-color 0.15s;
+      }
+      .form-input:focus,
+      .form-select:focus {
+        border-color: var(--gold-dim);
+      }
+      .form-select option {
+        background: var(--surface3);
+      }
+
+      /* ─── CALENDAR GRID ────────────────────────────────────────────────── */
+      .cal-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+      }
+      .cal-day {
+        background: var(--surface2);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 12px;
+      }
+      .cal-date {
+        font-family: "DM Mono", monospace;
+        font-size: 0.6rem;
+        color: var(--cream-dim);
+        margin-bottom: 8px;
+        letter-spacing: 0.06em;
+      }
+      .cal-date.today {
+        color: var(--gold);
+      }
+      .cal-diff {
+        margin-bottom: 5px;
+      }
+      .cal-diff-name {
+        font-size: 0.72rem;
+        color: var(--cream);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .cal-diff-sub {
+        font-family: "DM Mono", monospace;
+        font-size: 0.52rem;
+        color: var(--cream-dim);
+      }
+
+      /* ─── TREND LINE ───────────────────────────────────────────────────── */
+      .trend-wrap {
+        display: flex;
+        align-items: flex-end;
+        gap: 2px;
+        height: 72px;
+      }
+      .trend-bar {
+        flex: 1;
+        background: var(--blue);
+        border-radius: 2px 2px 0 0;
+        min-height: 2px;
+        transition: height 0.4s ease;
+        position: relative;
+      }
+      .trend-bar.today-bar {
+        background: var(--gold);
+      }
+      .trend-bar:hover .trend-tip {
+        display: block;
+      }
+      .trend-tip {
+        display: none;
+        position: absolute;
+        bottom: calc(100% + 4px);
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--surface3);
+        border: 1px solid var(--border2);
+        border-radius: 3px;
+        font-family: "DM Mono", monospace;
+        font-size: 0.52rem;
+        color: var(--cream);
+        padding: 3px 6px;
+        white-space: nowrap;
+        z-index: 10;
+      }
+
+      /* ─── LOADING / ERROR ──────────────────────────────────────────────── */
+      .spinner {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: 2px solid var(--border2);
+        border-top-color: var(--gold);
+        border-radius: 50%;
+        animation: spin 0.7s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .empty-state {
+        text-align: center;
+        padding: 40px;
+        font-family: "DM Mono", monospace;
+        font-size: 0.7rem;
+        color: var(--cream-faint);
+      }
+      .error-msg {
+        background: var(--red-bg);
+        border: 1px solid var(--red);
+        border-radius: 4px;
+        padding: 10px 14px;
+        font-size: 0.8rem;
+        color: var(--red-bright);
+        margin-bottom: 16px;
+      }
+      .success-msg {
+        background: var(--green-bg);
+        border: 1px solid var(--green);
+        border-radius: 4px;
+        padding: 10px 14px;
+        font-size: 0.8rem;
+        color: var(--green-bright);
+        margin-bottom: 16px;
+      }
+
+      /* ─── DONUT STAT ───────────────────────────────────────────────────── */
+      .donut-row {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+      .donut-stat {
+        text-align: center;
+        min-width: 80px;
+      }
+      .donut-val {
+        font-family: "DM Mono", monospace;
+        font-size: 1.6rem;
+        color: var(--cream);
+        line-height: 1;
+      }
+      .donut-lbl {
+        font-family: "DM Mono", monospace;
+        font-size: 0.52rem;
+        color: var(--cream-dim);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-top: 4px;
+      }
+      .breakdown-bar {
+        height: 6px;
+        border-radius: 3px;
+        background: var(--surface3);
+        margin-bottom: 4px;
+        overflow: hidden;
+        display: flex;
+      }
+      .breakdown-seg {
+        height: 100%;
+        transition: width 0.5s;
+      }
+
+      /* ─── OPENING SEARCH ───────────────────────────────────────────────── */
+      #opening-results {
+        max-height: 260px;
+        overflow-y: auto;
+        background: var(--surface3);
+        border: 1px solid var(--border2);
+        border-radius: 4px;
+        margin-top: 6px;
+      }
+      .opening-result-row {
+        padding: 9px 12px;
+        cursor: pointer;
+        border-bottom: 1px solid var(--border);
+        font-size: 0.82rem;
+        transition: background 0.1s;
+      }
+      .opening-result-row:last-child {
+        border-bottom: none;
+      }
+      .opening-result-row:hover {
+        background: var(--surface2);
+      }
+      .opening-result-row.selected {
+        background: var(--gold-bg);
+        border-left: 3px solid var(--gold);
+      }
+      .or-name {
+        color: var(--cream);
+        font-weight: 500;
+      }
+      .or-meta {
+        font-family: "DM Mono", monospace;
+        font-size: 0.58rem;
+        color: var(--cream-dim);
+        margin-top: 2px;
+      }
+
+      /* ─── TOAST ────────────────────────────────────────────────────────── */
+      #dash-toast {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 9000;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-end;
+      }
+      .d-toast {
+        padding: 10px 16px;
+        border-radius: 5px;
+        font-size: 0.82rem;
+        font-weight: 500;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
+        animation: dtIn 0.2s ease;
+        max-width: 300px;
+      }
+      .d-toast.ok {
+        background: #0e1f15;
+        border: 1px solid var(--green);
+        color: var(--green-bright);
+      }
+      .d-toast.err {
+        background: #180b0b;
+        border: 1px solid var(--red);
+        color: var(--red-bright);
+      }
+      .d-toast.info {
+        background: var(--surface2);
+        border: 1px solid var(--border2);
+        color: var(--cream);
+      }
+      @keyframes dtIn {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ── SIDEBAR ────────────────────────────────────────────────────── -->
+    <div id="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo">Open<em>dle</em></div>
+        <div class="badge">Dev Dashboard</div>
+      </div>
+      <nav>
+        <div class="nav-group">
+          <div class="nav-label">Overview</div>
+          <div class="nav-item active" onclick="goto('analytics')">
+            <span class="nav-icon">📊</span> Analytics
+          </div>
+          <div class="nav-item" onclick="goto('daily')">
+            <span class="nav-icon">☀</span> Daily Picks
+          </div>
+          <div class="nav-item" onclick="goto('calendar')">
+            <span class="nav-icon">📅</span> Calendar
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-label">Database</div>
+          <div class="nav-item" onclick="goto('openings')">
+            <span class="nav-icon">♟</span> Openings
+          </div>
+        </div>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="auth-status">
+          <div class="auth-dot" id="auth-dot"></div>
+          <span id="auth-label">Not authenticated</span>
+        </div>
+        <input
+          id="key-input"
+          type="password"
+          placeholder="Dev API key…"
+          autocomplete="off"
+        />
+        <button id="auth-btn" onclick="authenticate()">Authenticate ⟶</button>
+      </div>
+    </div>
+
+    <!-- ── MAIN ───────────────────────────────────────────────────────── -->
+    <div id="main">
+      <!-- ANALYTICS PAGE -->
+      <div class="page active" id="page-analytics">
+        <div class="page-header">
+          <div>
+            <div class="page-title">Analytics</div>
+            <div class="page-sub">
+              Global play data · auto-refreshes on load
+            </div>
+          </div>
+          <button class="btn btn-ghost btn-sm" onclick="loadAnalytics()">
+            ↺ Refresh
+          </button>
+        </div>
+
+        <div class="stat-grid" id="stat-cards">
+          <div class="stat-card">
+            <div class="stat-val" id="sc-total">—</div>
+            <div class="stat-lbl">Total Games</div>
+          </div>
+          <div class="stat-card green">
+            <div class="stat-val" id="sc-winrate">—</div>
+            <div class="stat-lbl">Win Rate</div>
+          </div>
+          <div class="stat-card blue">
+            <div class="stat-val" id="sc-today">—</div>
+            <div class="stat-lbl">Games Today</div>
+          </div>
+          <div class="stat-card yellow">
+            <div class="stat-val" id="sc-openings">—</div>
+            <div class="stat-lbl">Openings in DB</div>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+          "
+        >
+          <!-- Guess distribution -->
+          <div class="section">
+            <div class="section-head">
+              <div class="section-title">Guess Distribution</div>
+            </div>
+            <div class="section-body">
+              <div class="mini-bar-wrap" id="guess-bars">
+                <div class="empty-state">Loading…</div>
+              </div>
+              <div class="bar-labels" id="guess-labels"></div>
+            </div>
+          </div>
+
+          <!-- Mode breakdown -->
+          <div class="section">
+            <div class="section-head">
+              <div class="section-title">Mode Breakdown</div>
+            </div>
+            <div class="section-body" id="mode-breakdown">
+              <div class="empty-state">Loading…</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14-day trend -->
+        <div class="section" style="margin-bottom: 20px">
+          <div class="section-head">
+            <div class="section-title">14-Day Activity</div>
+            <div
+              style="
+                font-family: &quot;DM Mono&quot;, monospace;
+                font-size: 0.6rem;
+                color: var(--cream-dim);
+              "
+            >
+              games per day
+            </div>
+          </div>
+          <div class="section-body">
+            <div class="trend-wrap" id="trend-bars">
+              <div class="empty-state">Loading…</div>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                font-family: &quot;DM Mono&quot;, monospace;
+                font-size: 0.5rem;
+                color: var(--cream-faint);
+                margin-top: 4px;
+              "
+              id="trend-labels"
+            ></div>
+          </div>
+        </div>
+
+        <!-- Top openings table -->
+        <div class="section">
+          <div class="section-head">
+            <div class="section-title">Top Openings</div>
+            <div
+              style="
+                font-family: &quot;DM Mono&quot;, monospace;
+                font-size: 0.6rem;
+                color: var(--cream-dim);
+              "
+            >
+              by times seen
+            </div>
+          </div>
+          <div class="section-body" style="padding: 0">
+            <table class="data-table" id="top-openings-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Opening</th>
+                  <th>Difficulty</th>
+                  <th>ECO</th>
+                  <th>Seen</th>
+                  <th>Wins</th>
+                  <th>Win Rate</th>
+                </tr>
+              </thead>
+              <tbody id="top-openings-body">
+                <tr>
+                  <td colspan="7" class="empty-state">Loading…</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAILY PICKS PAGE -->
+      <div class="page" id="page-daily">
+        <div class="page-header">
+          <div>
+            <div class="page-title">Daily Picks</div>
+            <div class="page-sub">
+              Override the auto-generated daily puzzle for any date
+            </div>
+          </div>
+        </div>
+
+        <div id="daily-msg"></div>
+
+        <div class="section" style="margin-bottom: 20px">
+          <div class="section-head">
+            <div class="section-title">Set Daily Pick</div>
+          </div>
+          <div class="section-body">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Date</label>
+                <input type="date" class="form-input" id="pick-date" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Difficulty</label>
+                <select
+                  class="form-select"
+                  id="pick-diff"
+                  onchange="searchOpeningsForPick()"
+                >
+                  <option value="beginner">Beginner</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="master">Master</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 12px">
+              <label class="form-label">Search Opening</label>
+              <input
+                type="text"
+                class="form-input"
+                id="pick-search"
+                placeholder="Type to search…"
+                oninput="searchOpeningsForPick()"
+              />
+              <div id="opening-results"></div>
+            </div>
+            <div
+              id="pick-selected"
+              style="
+                display: none;
+                background: var(--gold-bg);
+                border: 1px solid var(--gold-dim);
+                border-radius: 4px;
+                padding: 10px 14px;
+                margin-bottom: 12px;
+              "
+            >
+              <div
+                style="
+                  font-family: &quot;DM Mono&quot;, monospace;
+                  font-size: 0.6rem;
+                  color: var(--gold-dim);
+                  margin-bottom: 4px;
+                "
+              >
+                SELECTED
+              </div>
+              <div
+                id="pick-selected-name"
+                style="color: var(--cream); font-weight: 600"
+              ></div>
+              <div
+                id="pick-selected-meta"
+                style="
+                  font-family: &quot;DM Mono&quot;, monospace;
+                  font-size: 0.6rem;
+                  color: var(--cream-dim);
+                  margin-top: 2px;
+                "
+              ></div>
+            </div>
+            <button class="btn btn-gold" onclick="savePick()">
+              Save Daily Pick ✓
+            </button>
+          </div>
+        </div>
+
+        <!-- Existing picks -->
+        <div class="section">
+          <div class="section-head">
+            <div class="section-title">Current Overrides</div>
+            <button class="btn btn-ghost btn-sm" onclick="loadPicks()">
+              ↺ Refresh
+            </button>
+          </div>
+          <div style="padding: 0">
+            <table class="data-table" id="picks-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Difficulty</th>
+                  <th>Opening</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="picks-body">
+                <tr>
+                  <td colspan="4" class="empty-state">Loading…</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- CALENDAR PAGE -->
+      <div class="page" id="page-calendar">
+        <div class="page-header">
+          <div>
+            <div class="page-title">Puzzle Calendar</div>
+            <div class="page-sub">
+              Next 30 days · gold = manual pick, grey = auto-generated
+            </div>
+          </div>
+          <button class="btn btn-ghost btn-sm" onclick="loadCalendar()">
+            ↺ Refresh
+          </button>
+        </div>
+        <div class="cal-grid" id="cal-grid">
+          <div class="empty-state">Loading calendar…</div>
+        </div>
+      </div>
+
+      <!-- OPENINGS PAGE -->
+      <div class="page" id="page-openings">
+        <div class="page-header">
+          <div>
+            <div class="page-title">Openings Database</div>
+            <div class="page-sub">Browse and manage the opening pool</div>
+          </div>
+        </div>
+
+        <div class="form-row" style="margin-bottom: 16px">
+          <div class="form-group">
+            <label class="form-label">Search</label>
+            <input
+              type="text"
+              class="form-input"
+              id="op-search"
+              placeholder="Name or family…"
+              oninput="filterOpenings()"
+            />
+          </div>
+          <div class="form-group" style="max-width: 180px">
+            <label class="form-label">Difficulty</label>
+            <select
+              class="form-select"
+              id="op-diff"
+              onchange="filterOpenings()"
+            >
+              <option value="">All</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="master">Master</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-head">
+            <div class="section-title" id="op-count-lbl">All Openings</div>
+          </div>
+          <div style="padding: 0">
+            <table class="data-table" id="op-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Family</th>
+                  <th>ECO</th>
+                  <th>Tier</th>
+                  <th>Moves</th>
+                </tr>
+              </thead>
+              <tbody id="op-tbody">
+                <tr>
+                  <td colspan="5" class="empty-state">Loading…</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /main -->
+
+    <div id="dash-toast"></div>
+
+    <script>
+      // ══════════════════════════════════════════════════════════════════════
+      // DEV DASHBOARD JS
+      // All API calls require the X-Dev-Key header set via the sidebar auth.
+      // ══════════════════════════════════════════════════════════════════════
+
+      const API = window.location.origin;
+      let DEV_KEY = localStorage.getItem("opd_dev_key") || "";
+      let allOpeningsCache = []; // for offline filtering
+      let selectedPick = null; // opening object selected in the pick form
+
+      console.debug("[dash] Dashboard loaded, API:", API);
+
+      // ──────────────────────────────────────────────────────────────────────
+      // Toast
+      // ──────────────────────────────────────────────────────────────────────
+      function dToast(msg, type = "info", dur = 3500) {
+        console.debug("[toast]", type, msg);
+        const wrap = document.getElementById("dash-toast");
+        const t = document.createElement("div");
+        t.className = `d-toast ${type}`;
+        t.textContent = msg;
+        wrap.appendChild(t);
+        setTimeout(() => {
+          t.style.opacity = "0";
+          t.style.transition = "opacity .3s";
+          setTimeout(() => t.remove(), 350);
+        }, dur);
+      }
+
+      // ──────────────────────────────────────────────────────────────────────
+      // Navigation
+      // ──────────────────────────────────────────────────────────────────────
+      function goto(page) {
+        console.debug("[nav] goto", page);
+        document
+          .querySelectorAll(".page")
+          .forEach((p) => p.classList.remove("active"));
+        document
+          .querySelectorAll(".nav-item")
+          .forEach((n) => n.classList.remove("active"));
+        document.getElementById("page-" + page).classList.add("active");
+        document
+          .querySelector(`.nav-item[onclick="goto('${page}')"]`)
+          .classList.add("active");
+
+        // Lazy-load data for each page
+        const loaders = {
+          analytics: loadAnalytics,
+          daily: loadDailyPage,
+          calendar: loadCalendar,
+          openings: loadOpeningsPage,
+        };
+        if (loaders[page]) loaders[page]();
+      }
+
+      // ──────────────────────────────────────────────────────────────────────
+      // Auth
+      // ──────────────────────────────────────────────────────────────────────
+      function authenticate() {
+        const key = document.getElementById("key-input").value.trim();
+        if (!key) {
+          dToast("Enter a dev key first", "err");
+          return;
+        }
+        DEV_KEY = key;
+        localStorage.setItem("opd_dev_key", key);
+        console.debug("[auth] Key stored, testing...");
+        // Test the key
+        devFetch("/api/dev/stats")
+          .then((data) => {
+            document.getElementById("auth-dot").classList.add("ok");
+            document.getElementById("auth-label").textContent =
+              "Authenticated ✓";
+            dToast("Authenticated!", "ok");
+            loadAnalytics();
+          })
+          .catch((err) => {
+            document.getElementById("auth-dot").classList.remove("ok");
+            document.getElementById("auth-label").textContent = "Auth failed";
+            dToast("Wrong key or server error", "err");
+            console.error("[auth] Failed:", err);
+          });
+      }
+
+      // Pre-fill from localStorage
+      if (DEV_KEY) {
+        document.getElementById("key-input").value = DEV_KEY;
+        document.getElementById("auth-label").textContent = "Key loaded";
+      }
+
+      // ──────────────────────────────────────────────────────────────────────
+      // Fetch helpers
+      // ──────────────────────────────────────────────────────────────────────
+      async function devFetch(path, opts = {}) {
+        console.debug("[api]", opts.method || "GET", path);
+        const res = await fetch(API + path, {
+          ...opts,
+          headers: {
+            "X-Dev-Key": DEV_KEY,
+            "Content-Type": "application/json",
+            ...(opts.headers || {}),
+          },
+        });
+        if (!res.ok) {
+          const err = await res
+            .json()
+            .catch(() => ({ detail: res.statusText }));
+          throw new Error(err.detail || `HTTP ${res.status}`);
+        }
+        return res.json();
+      }
+
+      async function pubFetch(path) {
+        console.debug("[api] pub GET", path);
+        const res = await fetch(API + path);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      }
+
+      // ──────────────────────────────────────────────────────────────────────
+      // ANALYTICS PAGE
+      // ──────────────────────────────────────────────────────────────────────
+      async function loadAnalytics() {
+        console.debug("[analytics] Loading...");
+        try {
+          const data = await devFetch("/api/dev/stats");
+          console.debug("[analytics] Got data:", data.summary);
+
+          // Stat cards
+          document.getElementById("sc-total").textContent =
+            data.summary.total_games.toLocaleString();
+          document.getElementById("sc-winrate").textContent =
+            data.summary.win_rate_pct + "%";
+          document.getElementById("sc-today").textContent = (
+            data.daily_trend?.[13]?.games ?? 0
+          ).toLocaleString();
+          document.getElementById("sc-openings").textContent =
+            data.summary.total_openings_in_db;
+
+          // Guess distribution bars
+          renderGuessBars(data.guess_distribution);
+
+          // Mode breakdown
+          renderModeBreakdown(data.mode_breakdown);
+
+          // 14-day trend
+          renderTrend(data.daily_trend);
+
+          // Top openings
+          renderTopOpenings(data.popular_openings);
+        } catch (err) {
+          console.error("[analytics] Error:", err);
+          dToast("Failed to load analytics: " + err.message, "err");
+        }
+      }
+
+      function renderGuessBars(dist) {
+        const max = Math.max(...dist, 1);
+        const wrap = document.getElementById("guess-bars");
+        const labels = document.getElementById("guess-labels");
+        wrap.innerHTML = "";
+        labels.innerHTML = "";
+        console.debug("[analytics] Guess distribution:", dist);
+        dist.forEach((count, i) => {
+          const pct = (count / max) * 100;
+          const bar = document.createElement("div");
+          bar.className = "mini-bar";
+          bar.style.height = Math.max(pct, 2) + "%";
+          bar.style.background = count > 0 ? "var(--green)" : "var(--surface3)";
+          bar.innerHTML = `<div class="mini-bar-tip">Guess ${i + 1}: ${count} games</div>`;
+          wrap.appendChild(bar);
+
+          const lbl = document.createElement("div");
+          lbl.className = "bar-label";
+          lbl.textContent = i + 1;
+          labels.appendChild(lbl);
+        });
+      }
+
+      function renderModeBreakdown(modes) {
+        const total = Object.values(modes).reduce((a, b) => a + b, 0) || 1;
+        const colors = {
+          daily: "var(--gold)",
+          random: "var(--blue)",
+          blitz: "var(--red)",
+          reverse: "var(--purple)",
+        };
+        const el = document.getElementById("mode-breakdown");
+        el.innerHTML = "";
+        console.debug("[analytics] Mode breakdown:", modes);
+
+        Object.entries(modes).forEach(([mode, count]) => {
+          const pct = Math.round((count / total) * 100);
+          el.innerHTML += `
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-family:'DM Mono',monospace;font-size:0.65rem;margin-bottom:4px;">
+          <span style="color:var(--cream-dim);text-transform:capitalize;">${mode}</span>
+          <span style="color:var(--cream);">${pct}% (${count})</span>
+        </div>
+        <div class="breakdown-bar">
+          <div class="breakdown-seg" style="width:${pct}%;background:${colors[mode] || "var(--gold-dim)"}"></div>
+        </div>
+      </div>`;
+        });
+      }
+
+      function renderTrend(trend) {
+        const max = Math.max(...trend.map((t) => t.games), 1);
+        const today = new Date().toISOString().slice(0, 10);
+        const wrap = document.getElementById("trend-bars");
+        const lblWrap = document.getElementById("trend-labels");
+        wrap.innerHTML = "";
+        lblWrap.innerHTML = "";
+        console.debug("[analytics] Trend data, max:", max);
+
+        trend.forEach((day) => {
+          const pct = (day.games / max) * 100;
+          const bar = document.createElement("div");
+          bar.className =
+            "trend-bar" + (day.date === today ? " today-bar" : "");
+          bar.style.height = Math.max(pct, 2) + "%";
+          bar.innerHTML = `<div class="trend-tip">${day.date}<br>${day.games} games</div>`;
+          wrap.appendChild(bar);
+        });
+
+        // Show first and last label only
+        if (trend.length > 0) {
+          lblWrap.innerHTML = `<span>${trend[0].date}</span><span>${trend[trend.length - 1].date}</span>`;
+        }
+      }
+
+      function renderTopOpenings(openings) {
+        const tbody = document.getElementById("top-openings-body");
+        if (!openings || openings.length === 0) {
+          tbody.innerHTML =
+            '<tr><td colspan="7" class="empty-state">No data yet</td></tr>';
+          return;
+        }
+        console.debug("[analytics] Top openings count:", openings.length);
+        const diffBadge = (d) => {
+          const cls =
+            d === "Beginner" ? "beg" : d === "Intermediate" ? "int" : "mas";
+          return `<span class="badge ${cls}">${d}</span>`;
+        };
+        tbody.innerHTML = openings
+          .map(
+            (o, i) => `
+    <tr>
+      <td style="color:var(--cream-dim);font-family:'DM Mono',monospace;font-size:0.7rem;">${i + 1}</td>
+      <td>${o.name}</td>
+      <td>${diffBadge(o.difficulty)}</td>
+      <td style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--gold-dim);">${o.eco}</td>
+      <td style="font-family:'DM Mono',monospace;font-size:0.8rem;">${o.seen}</td>
+      <td style="font-family:'DM Mono',monospace;font-size:0.8rem;">${o.wins}</td>
+      <td>
+        <div style="display:flex;align-items:center;gap:6px;">
+          <div style="flex:1;height:4px;background:var(--surface3);border-radius:2px;overflow:hidden;">
+            <div style="height:100%;width:${o.win_rate}%;background:var(--green);border-radius:2px;"></div>
+          </div>
+          <span style="font-family:'DM Mono',monospace;font-size:0.65rem;color:var(--green-bright);min-width:32px;">${o.win_rate}%</span>
+        </div>
+      </td>
+    </tr>`,
+          )
+          .join("");
+      }
+
+      // ──────────────────────────────────────────────────────────────────────
+      // DAILY PICKS PAGE
+      // ──────────────────────────────────────────────────────────────────────
+      async function loadDailyPage() {
+        console.debug("[daily] Loading...");
+        // Set default date to today
+        const today = new Date().toISOString().slice(0, 10);
+        document.getElementById("pick-date").value = today;
+        await loadPicks();
+        await loadAllOpeningsForPicker();
+      }
+
+      async function loadAllOpeningsForPicker() {
+        console.debug("[picker] Loading openings for picker...");
+        try {
+          const data = await devFetch("/api/dev/openings");
+          allOpeningsCache = data.openings;
+          console.debug(
+            "[picker] Loaded",
+            allOpeningsCache.length,
+            "openings into cache",
+          );
+        } catch (err) {
+          console.error("[picker] Failed to load openings:", err);
+          dToast("Could not load openings: " + err.message, "err");
+        }
+      }
+
+      function searchOpeningsForPick() {
+        const q = document.getElementById("pick-search").value.toLowerCase();
+        const diff = document.getElementById("pick-diff").value;
+        const tierMap = { beginner: 1, intermediate: 2, master: 3 };
+        const tier = tierMap[diff];
+        const el = document.getElementById("opening-results");
+
+        console.debug("[picker] Search q:", q, "diff:", diff);
+
+        if (!q) {
+          el.innerHTML = "";
+          return;
+        }
+
+        const matches = allOpeningsCache
+          .filter((o) => o.tier === tier)
+          .filter(
+            (o) =>
+              o.name.toLowerCase().includes(q) ||
+              o.family.toLowerCase().includes(q),
+          )
+          .slice(0, 10);
+
+        console.debug("[picker] Matches found:", matches.length);
+        el.innerHTML =
+          matches
+            .map(
+              (o) => `
+    <div class="opening-result-row" onclick="selectPick(${JSON.stringify(o).replace(/"/g, "&quot;")})">
+      <div class="or-name">${o.name}</div>
+      <div class="or-meta">${o.eco} · ${o.family} · ${o.moves_count} moves</div>
+    </div>`,
+            )
+            .join("") || '<div class="empty-state">No matches</div>';
+      }
+
+      function selectPick(opening) {
+        console.debug("[picker] Selected:", opening.name);
+        selectedPick = opening;
+
+        // Highlight row
+        document
+          .querySelectorAll(".opening-result-row")
+          .forEach((r) => r.classList.remove("selected"));
+        event.currentTarget.classList.add("selected");
+
+        // Show selected block
+        document.getElementById("pick-selected").style.display = "block";
+        document.getElementById("pick-selected-name").textContent =
+          opening.name;
+        document.getElementById("pick-selected-meta").textContent =
+          `${opening.eco} · ${opening.family}`;
+      }
+
+      async function savePick() {
+        if (!selectedPick) {
+          dToast("Select an opening first", "err");
+          return;
+        }
+        const date = document.getElementById("pick-date").value;
+        const diff = document.getElementById("pick-diff").value;
+        if (!date) {
+          dToast("Pick a date", "err");
+          return;
+        }
+
+        console.debug("[daily] Saving pick:", date, diff, selectedPick.name);
+        const msgEl = document.getElementById("daily-msg");
+        msgEl.innerHTML = "";
+
+        try {
+          await devFetch("/api/dev/picks", {
+            method: "POST",
+            body: JSON.stringify({
+              date,
+              difficulty: diff,
+              opening_name: selectedPick.name,
+            }),
+          });
+          console.debug("[daily] Pick saved!");
+          msgEl.innerHTML = `<div class="success-msg">✓ Set ${diff} pick for ${date}: ${selectedPick.name}</div>`;
+          dToast("Daily pick saved!", "ok");
+          selectedPick = null;
+          document.getElementById("pick-selected").style.display = "none";
+          document.getElementById("pick-search").value = "";
+          document.getElementById("opening-results").innerHTML = "";
+          await loadPicks();
+        } catch (err) {
+          console.error("[daily] Save failed:", err);
+          msgEl.innerHTML = `<div class="error-msg">Error: ${err.message}</div>`;
+          dToast("Failed: " + err.message, "err");
+        }
+      }
+
+      async function loadPicks() {
+        console.debug("[daily] Loading picks...");
+        const tbody = document.getElementById("picks-body");
+        tbody.innerHTML =
+          '<tr><td colspan="4" class="empty-state"><div class="spinner"></div></td></tr>';
+
+        try {
+          const data = await devFetch("/api/dev/picks");
+          const picks = data.picks;
+          console.debug("[daily] Got picks:", Object.keys(picks).length);
+
+          if (Object.keys(picks).length === 0) {
+            tbody.innerHTML =
+              '<tr><td colspan="4" class="empty-state">No manual picks set</td></tr>';
+            return;
+          }
+
+          const sorted = Object.entries(picks).sort((a, b) =>
+            a[0].localeCompare(b[0]),
+          );
+          const diffBadge = (d) => {
+            const cls =
+              d === "beginner" ? "beg" : d === "intermediate" ? "int" : "mas";
+            return `<span class="badge ${cls}">${d}</span>`;
+          };
+
+          tbody.innerHTML = sorted
+            .map(([key, name]) => {
+              const [date, diff] = key.split("_");
+              return `<tr>
+        <td style="font-family:'DM Mono',monospace;font-size:0.75rem;">${date}</td>
+        <td>${diffBadge(diff)}</td>
+        <td>${name}</td>
+        <td><button class="btn btn-red btn-sm" onclick="deletePick('${date}','${diff}')">Delete</button></td>
+      </tr>`;
+            })
+            .join("");
+        } catch (err) {
+          console.error("[daily] Load picks error:", err);
+          tbody.innerHTML = `<tr><td colspan="4" class="empty-state" style="color:var(--red-bright);">${err.message}</td></tr>`;
+        }
+      }
+
+      async function deletePick(date, diff) {
+        if (!confirm(`Delete pick for ${date} (${diff})?`)) return;
+        console.debug("[daily] Deleting pick:", date, diff);
+        try {
+          await devFetch(`/api/dev/picks/${date}/${diff}`, {
+            method: "DELETE",
+          });
+          dToast("Pick deleted", "ok");
+          await loadPicks();
+        } catch (err) {
+          console.error("[daily] Delete error:", err);
+          dToast("Delete failed: " + err.message, "err");
+        }
+      }
+
+      // ──────────────────────────────────────────────────────────────────────
+      // CALENDAR PAGE
+      // ──────────────────────────────────────────────────────────────────────
+      async function loadCalendar() {
+        console.debug("[calendar] Loading...");
+        const grid = document.getElementById("cal-grid");
+        grid.innerHTML =
+          '<div class="empty-state"><div class="spinner"></div> Loading calendar…</div>';
+
+        try {
+          const data = await devFetch("/api/dev/calendar?days=30");
+          const today = new Date().toISOString().slice(0, 10);
+          console.debug("[calendar] Got", data.calendar.length, "days");
+
+          grid.innerHTML = data.calendar
+            .map((day) => {
+              const isToday = day.date === today;
+              const diffs = ["beginner", "intermediate", "master"];
+              const rows = diffs
+                .map((d) => {
+                  const p = day.puzzles[d];
+                  const badge = p?.is_manual
+                    ? `<span class="badge manual">manual</span>`
+                    : `<span class="badge auto">auto</span>`;
+                  return `<div class="cal-diff">
+          <div class="cal-diff-name">${p?.opening || "—"}</div>
+          <div class="cal-diff-sub">${d} · ${p?.eco || ""} ${badge}</div>
+        </div>`;
+                })
+                .join("");
+
+              return `<div class="cal-day">
+        <div class="cal-date ${isToday ? "today" : ""}">${isToday ? "★ TODAY · " : ""}${day.date}</div>
+        ${rows}
+      </div>`;
+            })
+            .join("");
+        } catch (err) {
+          console.error("[calendar] Error:", err);
+          grid.innerHTML = `<div class="empty-state" style="color:var(--red-bright);">Error: ${err.message}</div>`;
+        }
+      }
+
+      // ──────────────────────────────────────────────────────────────────────
+      // OPENINGS PAGE
+      // ──────────────────────────────────────────────────────────────────────
+      let allOp = [];
+
+      async function loadOpeningsPage() {
+        console.debug("[openings] Loading...");
+        try {
+          const data = await devFetch("/api/dev/openings");
+          allOp = data.openings;
+          console.debug("[openings] Loaded", allOp.length, "openings");
+          renderOpeningsTable(allOp);
+        } catch (err) {
+          console.error("[openings] Error:", err);
+          document.getElementById("op-tbody").innerHTML =
+            `<tr><td colspan="5" class="empty-state" style="color:var(--red-bright);">${err.message}</td></tr>`;
+        }
+      }
+
+      function filterOpenings() {
+        const q = document.getElementById("op-search").value.toLowerCase();
+        const diff = document.getElementById("op-diff").value;
+        const tierMap = { beginner: 1, intermediate: 2, master: 3 };
+        let filtered = allOp;
+        if (diff) filtered = filtered.filter((o) => o.tier === tierMap[diff]);
+        if (q)
+          filtered = filtered.filter(
+            (o) =>
+              o.name.toLowerCase().includes(q) ||
+              o.family.toLowerCase().includes(q),
+          );
+        console.debug(
+          "[openings] Filter result:",
+          filtered.length,
+          "q:",
+          q,
+          "diff:",
+          diff,
+        );
+        renderOpeningsTable(filtered);
+      }
+
+      function renderOpeningsTable(list) {
+        document.getElementById("op-count-lbl").textContent =
+          `${list.length} Opening${list.length !== 1 ? "s" : ""}`;
+        const tierLabels = { 1: "beg", 2: "int", 3: "mas" };
+        const tierNames = { 1: "Beginner", 2: "Intermediate", 3: "Master" };
+        document.getElementById("op-tbody").innerHTML =
+          list
+            .map(
+              (o) => `
+    <tr>
+      <td>${o.name}</td>
+      <td style="color:var(--cream-dim);">${o.family}</td>
+      <td style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--gold-dim);">${o.eco}</td>
+      <td><span class="badge ${tierLabels[o.tier]}">${tierNames[o.tier]}</span></td>
+      <td style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--cream-dim);">${o.moves_count}</td>
+    </tr>`,
+            )
+            .join("") ||
+          '<tr><td colspan="5" class="empty-state">No results</td></tr>';
+      }
+
+      // ──────────────────────────────────────────────────────────────────────
+      // Init — load analytics if key is already set
+      // ──────────────────────────────────────────────────────────────────────
+      window.addEventListener("load", () => {
+        console.debug("[init] Dashboard ready");
+        if (DEV_KEY) {
+          document.getElementById("auth-label").textContent =
+            "Key loaded (click auth)";
+          // Auto-authenticate silently
+          devFetch("/api/dev/stats")
+            .then(() => {
+              document.getElementById("auth-dot").classList.add("ok");
+              document.getElementById("auth-label").textContent =
+                "Authenticated ✓";
+              loadAnalytics();
+            })
+            .catch(() => {
+              document.getElementById("auth-label").textContent =
+                "Key expired — re-auth";
+            });
+        }
+      });
+    </script>
+  </body>
+</html>
