@@ -1889,7 +1889,7 @@
           <span class="hstat-val" id="s-best">-</span
           ><span class="hstat-lbl">best</span>
         </div>
-        <button class="icon-btn" onclick="openModal('stats-modal')">Stats</button>
+        <button class="icon-btn" onclick="openModal('stats-modal')">📊</button>
       </div>
     </header>
 
@@ -2724,7 +2724,6 @@
         document.getElementById("moves-strip").style.display = "";
 
         buildReverseGrid();
-        renderReverseMoves();
       }
 
       function buildReverseGrid() {
@@ -2742,43 +2741,11 @@
               .querySelectorAll(".move-input-slot")
               .forEach((s) => s.classList.remove("selected"));
             slot.classList.add("selected");
-            renderReverseMoves();
           });
           grid.appendChild(slot);
         });
       }
 
-      function renderReverseMoves() {
-        const strip = document.getElementById("moves-strip");
-        [...strip.querySelectorAll(".move-group")].forEach((e) => e.remove());
-        const dots = strip.querySelector(".moves-dots");
-        if (dots) dots.innerHTML = "";
-        const meta = strip.querySelector(".moves-meta");
-        const moves = G.reverseSelected ? G.reverseSelected.moves : [];
-        if (!G.reverseSelected) {
-          meta.querySelector(".moves-hint").textContent =
-            "Pick an opening to preview the move list.";
-          return;
-        }
-        meta.querySelector(".moves-hint").textContent =
-          `Selected: ${G.reverseSelected.name}`;
-        for (let i = 0; i < moves.length; i += 2) {
-          const g = document.createElement("div");
-          g.className = "move-group";
-          const n = document.createElement("span");
-          n.className = "move-num";
-          n.textContent = i / 2 + 1 + ".";
-          g.appendChild(n);
-          [i, i + 1].forEach((idx) => {
-            if (idx >= moves.length) return;
-            const t = document.createElement("span");
-            t.className = "move-token shown";
-            t.textContent = moves[idx];
-            g.appendChild(t);
-          });
-          strip.insertBefore(g, meta);
-        }
-      }
 
       function submitReverseGuess() {
         if (!G.reverseSelected) {
@@ -2871,7 +2838,7 @@
       function render(flashBoard = false, freshMoveIdx = -1) {
         renderBoard(flashBoard);
         if (gameMode === "reverse") {
-          renderReverseMoves();
+          renderMoves();
         } else {
           renderMoves(freshMoveIdx);
           renderAttrGrid();
